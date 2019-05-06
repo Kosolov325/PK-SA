@@ -18,7 +18,7 @@ qstr_http://localhost/server http://localhost/serverapi/loadgear?server=1&apiKey
 qstr_You_are_logged_in_as You_are_logged_in_as_an_admin,_your_stats_will_not_be_loaded,_or_saved_when_you_leave.
 qstr_http://localhost/servera http://localhost/serverapi/stripgear?server=1&apiKey=123&guid={reg0}&pouchGold={reg1}
 qstr_http://localhost/serverap http://localhost/serverapi/saveplayer?server=1&apiKey=123&guid={reg0}&name={s0}&factionID={reg1}&classID={reg2}&pouchGold={reg3}&health={reg4}&food={reg5}&poison={reg6}&headArmour={reg7}&bodyArmour={reg8}&footArmour={reg9}&handArmour={reg10}&firstItem={reg11}&secondItem={reg12}&thirdItem={reg13}&forthItem={reg14}&firstAmmo={reg15}&secondAmmo={reg16}&thirdAmmo={reg17}&forthAmmo={reg18}&horse={reg19}&horseHealth={reg20}&xPosition={reg21}&yPosition={reg22}&zPosition={reg23}&alive
-qstr_http://localhost/serverapi http://localhost/serverapi/saveplayer?server=1&apiKey=123&guid={reg0}&factionID={reg1}&classID={reg2}
+qstr_http://localhost/serverapi http://localhost/serverapi/saveplayer?server=1&apiKey=123&guid={reg0}&name={s0}&factionID={reg1}&classID={reg2}
 qstr_http://localhost/serverapi/ http://localhost/serverapi/bankwithdraw?server=1&apiKey=123&playerID={reg0}&guid={reg1}&amount={reg2}
 qstr_You_do_not_have_any_ You_do_not_have_any_money_to_deposit.
 qstr_You_do_not_have_that You_do_not_have_that_much_money_to_deposit.
