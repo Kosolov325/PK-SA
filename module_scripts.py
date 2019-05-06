@@ -22,7 +22,368 @@ import math
 ####################################################################################################################
 
 scripts = []
+
+## PK.js SCRIPTS START ##
+def setArmour(slot, current_item):
+  script = [
+    (try_begin),
+      (ge, current_item, all_items_begin),
+      (call_script, "script_change_armor", ":agent_id", current_item),
+      (player_set_slot, ":player_id", slot, current_item),
+    (try_end),
+    ]
+
+  return lazy.block(script)
+
+def setItem(current_item):
+  script = [
+    (try_begin),
+      (ge, current_item, all_items_begin),
+      (agent_equip_item, ":agent_id", current_item),
+    (try_end),
+    ]
+
+  return lazy.block(script)
+
+
+def setAmmo(items, current_item):
+  script = [
+    (try_begin),
+      (gt, current_item, all_items_begin),
+      (item_get_type, ":item_type", current_item),
+      (this_or_next|eq, ":item_type", itp_type_arrows),
+      (this_or_next|eq, ":item_type", itp_type_bolts),
+      (eq, ":item_type", itp_type_thrown),
+      (assign, ":ammoamount", 0),
+    ]
+
+  for item in items:
+    script.extend([
+      (try_begin),
+        (eq, item, current_item),
+        (val_add, ":ammoamount", item+4),
+      (try_end),
+    ])
+
+  script.extend([
+      (agent_set_ammo, ":agent_id", current_item, ":ammoamount"),
+    (try_end),
+  ])
+
+  return lazy.block(script)
+
+## PK.js SCRIPTS END ##
+
 scripts.extend([
+
+  ## PK.js SCRIPTS START ##
+
+  ("game_receive_url_response",  # called by the game when a response is received from a web server, if used
+   [
+     (assign, ":action", reg0),
+
+     (try_begin),
+      (eq, ":action", pkjs_action_ping),
+      (server_add_message_to_log, "@Connection successfully made with the script server."),
+
+     (else_try),
+      (eq, ":action", pkjs_action_access_denied),
+      (server_add_message_to_log, "@Connection to script server denied. Invalid server id / api key."),
+
+     (else_try),
+      (eq, ":action", pkjs_action_load_player_name_taken),
+      (assign, ":player_id", reg1),
+      (multiplayer_send_string_to_player,":player_id", server_event_script_message_announce, "@Player name already taken. Use a different one!"),
+      (kick_player, ":player_id"),
+
+     (else_try),
+      (eq, ":action", pkjs_action_load_player_already_connected),
+      (assign, ":player_id", reg1),
+      (kick_player, ":player_id"),
+
+     (else_try),
+      (eq, ":action", pkjs_action_load_player),
+      (assign, ":player_id", reg1),
+      (try_begin),
+        (is_between, reg2, factions_begin, factions_end),
+        (call_script, "script_change_faction", ":player_id", reg2, change_faction_type_respawn),
+      (try_end),
+      (try_begin),
+        (is_between, reg3, playable_troops_begin, playable_troops_end),
+	    (player_set_troop_id, ":player_id", reg3),
+      (try_end),
+      (try_begin),
+        (neq, reg4, -1),
+        (player_add_spawn_item, ":player_id", 8, reg4),
+      (try_end),
+
+     (else_try),
+      (eq, ":action", pkjs_action_load_gear),
+      (assign, ":player_id", reg1),
+
+      (call_script, "script_player_adjust_gold", ":player_id", reg2, 0),
+
+      (player_get_agent_id, ":agent_id", ":player_id"),
+      (agent_set_hit_points, ":agent_id", reg4, 0),
+      (agent_set_slot, ":agent_id", slot_agent_food_amount, reg5),
+      (agent_set_slot, ":agent_id", slot_agent_poison_amount, reg6),
+
+      setArmour(slot_player_equip_head, reg7),
+      setArmour(slot_player_equip_body, reg8),
+      setArmour(slot_player_equip_foot, reg9),
+      setArmour(slot_player_equip_gloves, reg10),
+      setItem(reg11),
+      setItem(reg12),
+      setItem(reg13),
+      setItem(reg14),
+      setAmmo([reg11, reg12, reg13, reg14], reg15),
+      setAmmo([reg11, reg12, reg13, reg14], reg16),
+      setAmmo([reg11, reg12, reg13, reg14], reg17),
+      setAmmo([reg11, reg12, reg13, reg14], reg18),
+
+      (try_begin),
+        (neq, reg20, 0),
+        (neq, reg21, 0),
+        (neq, reg22, 0),
+
+        (position_set_x, pos0, reg20),
+        (position_set_y, pos0, reg21),
+        (position_set_z, pos0, reg22),
+
+        (agent_set_position, ":agent_id", pos0),
+
+        (try_begin),
+          (agent_get_horse, ":horse_agent_id", ":agent_id"),
+          (agent_is_active, ":horse_agent_id"),
+          (agent_set_position, ":horse_agent_id", pos0),
+          (agent_set_hit_points, ":horse_agent_id", reg19, 0),
+        (try_end),
+      (try_end),
+
+      (str_store_player_username, s1, ":player_id"),
+      (player_get_unique_id, reg1, ":player_id"),
+      (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@Welcome {s1} (GUID: {reg1}). {s0}"),
+      (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@You have {reg3} gold in the bank."),
+
+     (else_try),
+      (eq, ":action", pkjs_action_bank_withdraw),
+      (assign, ":player_id", reg1),
+
+      (try_begin),
+        (gt, reg2, 0),
+        (call_script, "script_player_adjust_gold", ":player_id", reg2, 1),
+        (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@Withdrawn {reg2} gold. You have {reg3} gold left in the bank."),
+      (else_try),
+        (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@You have no gold in the bank to withdraw."),
+     (try_end),
+
+      (str_store_player_username, s1, ":player_id"),
+      (player_get_unique_id, reg4, ":player_id"),
+      (server_add_message_to_log, "@Player {s1}  (GUID: {reg4}) withdrew {reg2} gold. {reg3} gold in the bank."),
+
+
+     (else_try),
+      (eq, ":action", pkjs_action_bank_deposit),
+      (assign, ":player_id", reg1),
+
+      (try_begin),
+        (gt, reg2, 0),
+        (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@Deposited {reg2} gold. You now have {reg3} gold in the bank."),
+
+        (str_store_player_username, s1, ":player_id"),
+        (player_get_unique_id, reg5, ":player_id"),
+        (server_add_message_to_log, "@Player {s1}  (GUID: {reg5}) deposited {reg2} gold. {reg3} gold in the bank."),
+      (try_end),
+
+      (try_begin),
+        (gt, reg4, 0),
+        (call_script, "script_player_adjust_gold", ":player_id", reg4, 1),
+        (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@{s0}"),
+      (try_end),
+
+     (try_end),
+   ]),
+
+  ("pkjs_ping", [
+    (send_message_to_url, pkjs_script_server + "/ping" + pkjs_querystring),
+    (server_add_message_to_log, "@Attempting to connect with the script server."),
+  ]),
+
+  ("pkjs_load_player", [
+    (store_script_param, reg0, 1),
+
+    (player_get_unique_id, reg1, reg0),
+    (str_store_player_username, s0, reg0),
+    (str_encode_url, s0),
+    (try_begin),
+      (player_is_admin, reg0),
+      (send_message_to_url, pkjs_script_server + "/loadplayer" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&name={s0}&admin"),
+    (else_try),
+      (send_message_to_url, pkjs_script_server + "/loadplayer" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&name={s0}"),
+    (try_end),
+  ]),
+
+  ("pkjs_load_gear", [
+    (store_script_param, ":agent_id", 1),
+
+    (try_begin),
+      (agent_is_human, ":agent_id"),
+      (agent_get_player_id, ":player_id", ":agent_id"),
+      (player_slot_eq, ":player_id", slot_player_first_spawn_occured, 0),
+      (try_begin),
+        (neg|player_is_admin, ":player_id"),
+        (assign, reg0, ":player_id"),
+        (player_get_unique_id, reg1, reg0),
+        (send_message_to_url, pkjs_script_server + "/loadgear" + pkjs_querystring + "&playerID={reg0}&guid={reg1}"),
+      (else_try),
+        (multiplayer_send_string_to_player, ":player_id", server_event_script_message,  "@You are logged in as an admin, your stats will not be loaded, or saved when you leave."),
+      (try_end),
+    (try_end),
+  ]),
+
+  ("pkjs_strip_gear", [
+    (store_script_param, ":dead_agent_id", 1),
+    (store_script_param, ":killer_agent_id", 2),
+
+    (try_begin),
+      (neq, ":killer_agent_id", -1),  # if -1 then the player disconnected. Otherwise they died for another reason.
+      (agent_is_human, ":dead_agent_id"),
+      (agent_get_player_id, ":player_id", ":dead_agent_id"),
+      (neg|player_is_admin, ":player_id"),  # if the player is an admin then don't wipe them.
+
+      (player_get_unique_id, reg0, ":player_id"),
+      (player_get_gold, reg1, ":player_id"),
+
+      (send_message_to_url, pkjs_script_server + "/stripgear" + pkjs_querystring + "&guid={reg0}&pouchGold={reg1}"),
+    (try_end),
+  ]),
+
+  ("pkjs_save_player_and_gear", [
+    (store_script_param, ":player_id", 1),
+
+    (try_begin),
+      (player_get_unique_id, reg0, ":player_id"),
+      (str_store_player_username, s0, ":player_id"),
+      (player_get_slot, reg1, ":player_id", slot_player_faction_id),
+      (player_get_troop_id, reg2, ":player_id"),
+      (player_get_gold, reg3, ":player_id"),
+
+      (player_get_agent_id, ":agent_id", ":player_id"),
+      (neq, ":agent_id", -1),
+
+      (store_agent_hit_points, reg4, ":agent_id", 0),
+      (agent_get_slot, reg5, ":agent_id", slot_agent_food_amount),
+      (agent_get_slot, reg6, ":agent_id", slot_agent_poison_amount),
+
+      (player_get_slot, reg7, ":player_id", slot_player_equip_head),
+      (player_get_slot, reg8, ":player_id", slot_player_equip_body),
+      (player_get_slot, reg9, ":player_id", slot_player_equip_foot),
+      (player_get_slot, reg10, ":player_id", slot_player_equip_gloves),
+      (player_set_slot, ":player_id", slot_player_equip_head, 0),
+      (player_set_slot, ":player_id", slot_player_equip_body, 0),
+      (player_set_slot, ":player_id", slot_player_equip_foot, 0),
+      (player_set_slot, ":player_id", slot_player_equip_gloves, 0),
+
+      (agent_get_item_slot, reg11, ":agent_id", 0),
+      (agent_get_item_slot, reg12, ":agent_id", 1),
+      (agent_get_item_slot, reg13, ":agent_id", 2),
+      (agent_get_item_slot, reg14, ":agent_id", 3),
+
+      (agent_get_ammo_for_slot, reg15, ":agent_id", 0),
+      (agent_get_ammo_for_slot, reg16, ":agent_id", 1),
+      (agent_get_ammo_for_slot, reg17, ":agent_id", 2),
+      (agent_get_ammo_for_slot, reg18, ":agent_id", 3),
+
+      (try_begin),
+        (is_between, reg11, banner_items_begin, banner_items_end),
+        (assign, reg11, 0),
+      (try_end),
+      (try_begin),
+        (is_between, reg12, banner_items_begin, banner_items_end),
+        (assign, reg12, 0),
+      (try_end),
+      (try_begin),
+        (is_between, reg13, banner_items_begin, banner_items_end),
+        (assign, reg13, 0),
+      (try_end),
+      (try_begin),
+        (is_between, reg14, banner_items_begin, banner_items_end),
+        (assign, reg14, 0),
+      (try_end),
+
+      (try_begin),
+        (assign, reg19, -1),
+        (agent_get_horse, ":horse_agent_id", ":agent_id"),
+        (agent_is_active, ":horse_agent_id"),
+        (agent_get_item_id, reg19, ":horse_agent_id"),
+        (store_agent_hit_points, reg20, ":horse_agent_id", 0),
+        (agent_fade_out, ":horse_agent_id"),
+      (try_end),
+
+      (agent_get_position, pos1, ":agent_id"),
+      (position_get_x, reg21, pos1),
+      (position_get_y, reg22, pos1),
+      (position_get_z, reg23, pos1),
+
+      (neg|player_is_admin, ":player_id"),
+      (try_begin),
+        (agent_is_alive, ":agent_id"),
+        (send_message_to_url,
+         pkjs_script_server + "/saveplayer" + pkjs_querystring +
+         "&guid={reg0}&name={s0}&factionID={reg1}&classID={reg2}&pouchGold={reg3}" +
+         "&health={reg4}&food={reg5}&poison={reg6}"
+         "&headArmour={reg7}&bodyArmour={reg8}&footArmour={reg9}&handArmour={reg10}" +
+         "&firstItem={reg11}&secondItem={reg12}&thirdItem={reg13}&forthItem={reg14}" +
+         "&firstAmmo={reg15}&secondAmmo={reg16}&thirdAmmo={reg17}&forthAmmo={reg18}" +
+         "&horse={reg19}&horseHealth={reg20}" +
+         "&xPosition={reg21}&yPosition={reg22}&zPosition={reg23}&alive"),
+      (else_try),
+        (send_message_to_url,
+         pkjs_script_server + "/saveplayer" + pkjs_querystring +
+         "&guid={reg0}&name={s0}&factionID={reg1}&classID={reg2}"),
+      (try_end),
+
+      (call_script, "script_cf_agent_consume_items", ":agent_id", reg11, reg12, reg13, reg14),
+      (call_script, "script_player_adjust_gold", ":player_id", 0, 0),
+    (try_end),
+  ]),
+
+  ("setup_bank_menu",
+   [(store_script_param, ":agent_id", 1),
+    (store_script_param, ":instance_id", 2),
+    (agent_get_player_id, ":player_id", ":agent_id"),
+    (multiplayer_send_int_to_player, ":player_id", server_event_bank_management, ":instance_id"),
+    ]),
+
+  ("bank_withdraw",
+   [(store_script_param, reg0, 1), # player ID
+    (store_script_param, reg2, 2), # amount
+
+    (player_get_unique_id, reg1, reg0),
+    (send_message_to_url, pkjs_script_server + "/bankwithdraw" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&amount={reg2}"),
+   ]),
+
+  ("bank_deposit",
+   [(store_script_param, reg0, 1), # player ID
+    (store_script_param, reg2, 2), # amount
+
+    (player_get_unique_id, reg1, reg0),
+    (player_get_gold, ":current_gold", reg0),
+
+    (try_begin),
+      (le, ":current_gold", 0),
+      (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You do not have any money to deposit."),
+    (else_try),
+      (lt, ":current_gold", reg2),
+      (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You do not have that much money to deposit."),
+    (else_try),
+      (call_script, "script_player_adjust_gold", reg0, reg2, -1),
+      (send_message_to_url, pkjs_script_server + "/bankdeposit" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&amount={reg2}"),
+    (try_end),
+
+   ]),
+
+  ## PK.js SCRIPTS END ##
 
   ("death_cam", [
     (store_script_param, ":agent_id", 1),
@@ -957,75 +1318,6 @@ scripts.extend([
     (try_end),
     ]),
 
-  ("game_receive_url_response", # called by the game when a response is received from a web server, if used
-   [(store_script_param, ":integer_count", 1),
-    (store_script_param, ":string_count", 2),
-
-    (try_begin),
-      (ge, ":integer_count", 1),
-      (assign, "$g_name_server_enabled", 1),
-      (assign, ":return_code", reg0),
-      (try_begin), # negative return codes are internal or configuration errors, not requiring action
-        (lt, ":return_code", 0),
-        (try_begin),
-          (eq, ":return_code", -1),
-          (ge, ":string_count", 1),
-          (server_add_message_to_log, "str_name_server_input_error_parameter_s0"),
-        (else_try),
-          (server_add_message_to_log, "str_name_server_error_code_reg0"),
-        (try_end),
-      (else_try),
-        (ge, ":integer_count", 3),
-        (assign, ":player_id", reg1),
-        (assign, ":unique_id", reg2),
-        (player_is_active, ":player_id"),
-        (player_get_unique_id, ":player_unique_id", ":player_id"),
-        (eq, ":player_unique_id", ":unique_id"),
-        (try_begin), # normal name server responses
-          (ge, ":return_code", 0),
-          (try_begin), # admin permissions were received
-            (ge, ":integer_count", 4),
-            (player_is_admin, ":player_id"),
-            (assign, ":admin_permissions", reg3),
-            (val_max, ":admin_permissions", 0),
-            (call_script, "script_player_set_admin_permissions", ":player_id", ":admin_permissions"),
-            (multiplayer_send_int_to_player, ":player_id", server_event_admin_set_permissions, ":admin_permissions"),
-          (try_end),
-          (neq, ":return_code", 0),
-          (assign, ":rejection_string_id", -1),
-          (try_begin), # deal with kicking a player for various reasons
-            (eq, ":return_code", 4),
-            (assign, ":rejection_string_id", "str_kicked_not_registered"),
-          (else_try),
-            (eq, ":return_code", 3),
-            (assign, ":rejection_string_id", "str_kicked_using_invalid_name"),
-          (else_try),
-            (eq, ":return_code", 2),
-            (assign, ":rejection_string_id", "str_kicked_using_other_clan_tag"),
-          (else_try),
-            (eq, ":return_code", 1),
-            (assign, ":rejection_string_id", "str_kicked_using_other_players_name"),
-          (try_end),
-          (neq, ":rejection_string_id", -1),
-          (multiplayer_send_2_int_to_player, ":player_id", server_event_preset_message, ":rejection_string_id", preset_message_error|preset_message_log),
-          (store_mission_timer_a, ":time"), # kick the player after a short delay to try ensure they see the rejection message
-          (val_add, ":time", name_server_kick_delay_interval),
-          (player_set_slot, ":player_id", slot_player_kick_at_time, ":time"),
-          (str_store_string, s10, ":rejection_string_id"),
-          (try_begin),
-            (lt, ":string_count", 1),
-            (str_store_string, s0, "str_empty_string"),
-          (try_end),
-          (server_add_message_to_log, "str_name_server_log_s10"),
-        (try_end),
-      (else_try),
-        (eq, ":return_code", 0), # reply from server startup check
-      (else_try),
-        (server_add_message_to_log, "str_name_server_invalid_response"),
-      (try_end),
-    (try_end),
-    ]),
-
   ("game_get_cheat_mode", []),
 
   ("game_receive_network_message", # called by the game whenever a custom network message is received, both clients and servers
@@ -1598,6 +1890,16 @@ scripts.extend([
         (try_end),
       (else_try), # chat string received from a client, from a range of event numbers to keep them in order
         (is_between, ":event_type", client_event_chat_message_begin, client_event_chat_message_end),
+
+        ## PK.js SCRIPTS START ##
+        (try_begin),
+		  (neg|is_vanilla_warband),
+          (str_sanitize, s0),
+          (str_clear, s32),
+          (str_store_replace, s0, s0, "@^", s32),
+        (try_end),
+        ## PK.js SCRIPTS END ##
+
         (try_begin),
           (player_is_active, ":sender_player_id"),
           (multiplayer_send_int_to_player, ":sender_player_id", server_event_chat_message_recieved, ":event_type"), # confirm to the sending client that the message was received
@@ -1772,7 +2074,29 @@ scripts.extend([
           (store_script_param, ":gold_amount", 3),
           (try_begin), # for positive amounts, drop a money bag
             (gt, ":gold_amount", 0),
-            (call_script, "script_cf_drop_money_bag_item", ":sender_player_id", ":gold_amount"),
+
+            ## PK.js SCRIPTS START ##
+    		(player_get_agent_id, ":agent_id", ":sender_player_id"),
+			(agent_get_position, pos0, ":agent_id"),
+			(position_set_z, pos0, 0),
+			(assign, ":too_near", 0),
+			(try_for_prop_instances, ":bank", "spr_pw_item_chest_invisible"),
+			  (prop_instance_get_position, pos1, ":bank"),
+			  (position_set_z, pos1, 0),
+			  (get_distance_between_positions, ":distance", pos0, pos1),
+			  (try_begin),
+			    (lt, ":distance", bank_access_distance),
+				(assign, ":too_near", 1),
+			  (try_end),
+			(try_end),
+			(try_begin),
+				(eq, ":too_near", 1),
+				(multiplayer_send_2_int_to_player, ":sender_player_id", server_event_preset_message, "str_too_close_to_bank_for_money_pouch", preset_message_error),
+			(else_try),
+				(call_script, "script_cf_drop_money_bag_item", ":sender_player_id", ":gold_amount"),
+			(try_end),
+            ## PK.js SCRIPTS END ##
+
           (else_try), # for negative amounts, check the admin has permission then spawn them the absolute money amount
             (lt, ":gold_amount", 0),
             (player_is_admin, ":sender_player_id"),
@@ -1826,6 +2150,11 @@ scripts.extend([
             (eq, ":display_as_admin", 1),
 
             (player_set_team_no, ":sender_player_id", team_spectators),
+
+            ## PK.js SCRIPTS START ##
+            (player_get_agent_id, ":agent_id", ":sender_player_id"),
+            (call_script, "script_pkjs_strip_gear", ":agent_id", -2),
+            ## PK.js SCRIPTS END ##
           (try_end),
         (try_end),
       (else_try), # reply with game rules
@@ -3000,7 +3329,6 @@ scripts.extend([
     (assign, "$g_force_weather", 2),
     (assign, "$g_game_time_limit", 1440),
     (assign, "$g_victory_condition", 0),
-    (assign, "$g_name_server_enabled", 0),
     (assign, "$g_spawn_item_prune_time", 600),
     (assign, "$g_full_respawn_health", 0),
     (assign, "$g_max_herd_animal_count", 20),
@@ -4541,6 +4869,11 @@ scripts.extend([
     (player_get_troop_id, ":troop_id", ":player_id"),
     (is_between, ":troop_id", playable_troops_begin, playable_troops_end),
     (player_get_unique_id, ":player_unique_id", ":player_id"),
+
+    ## PK.js SCRIPTS START ##
+    (call_script, "script_pkjs_save_player_and_gear", ":player_id"),
+    ## PK.js SCRIPTS END ##
+
     (troop_get_slot, ":inactive_array_size", "trp_inactive_players_array", slot_player_array_size),
     (assign, ":loop_end", ":inactive_array_size"),
     (assign, ":inactive_index", slot_player_array_begin),
@@ -4768,41 +5101,6 @@ scripts.extend([
       (call_script, "script_set_random_spawn_position", 50),
       (spawn_item, "itm_money_bag", 0, "$g_spawn_item_prune_time"),
       (scene_prop_set_slot, reg0, slot_scene_prop_gold_value, ":gold_loot"),
-    (try_end),
-    ]),
-
-  ("check_name_server", # server: send a test message to the name server to check whether it should be enabled
-   [
-    (try_begin),
-      (eq, "$g_name_server_enabled", 0),
-      (str_store_string, s1, "str_name_server"),
-      (neg|str_is_empty, s1),
-      (str_store_string, s2, "str_name_server_password"),
-      (neg|str_is_empty, s2),
-      (assign, reg1, 0),
-      (assign, reg2, 0),
-      (str_clear, s3),
-      (send_message_to_url, "str_http_s1_password_s2_id_reg1_uid_reg2_name_s3"),
-    (try_end),
-    ]),
-
-  ("player_check_name", # server: check the player name and unique id with the name server, if enabled
-   [(store_script_param, ":player_id", 1), # must be valid
-
-    (try_begin),
-      (eq, "$g_name_server_enabled", 1), # this is set upon reply to a test message sent at server start
-      (str_store_string, s1, "str_name_server"),
-      (str_store_string, s2, "str_name_server_password"),
-      (assign, reg1, ":player_id"),
-      (player_get_unique_id, reg2, ":player_id"),
-      (str_store_player_username, s3, ":player_id"),
-      (str_encode_url, s3),
-      (str_store_string, s0, "str_http_s1_password_s2_id_reg1_uid_reg2_name_s3"),
-      (try_begin),
-        (player_is_admin, ":player_id"),
-        (str_store_string, s0, "str_http_s0_admin"),
-      (try_end),
-      (send_message_to_url, s0),
     (try_end),
     ]),
 
@@ -14933,25 +15231,6 @@ scripts.extend([
       (try_end),
     (try_end),
     ]),
-
-  ## CUSTOM SERVER SCRIPTS START ##
-  ("setup_bank_menu",
-   [(store_script_param, ":agent_id", 1),
-    (store_script_param, ":instance_id", 2),
-    (agent_get_player_id, ":player_id", ":agent_id"),
-    (multiplayer_send_int_to_player, ":player_id", server_event_bank_management, ":instance_id"),
-   ]),
-
-  ("bank_withdraw",
-   [
-     (server_add_message_to_log, "@withdraw"),
-  ]),
-
-  ("bank_deposit",
-   [
-    (server_add_message_to_log, "@deposit"),
-   ]),
-  ## CUSTOM SERVER SCRIPTS END ##
 
   # script_skybox_set_lighting_for_time
   #   Sets the scene light for the specified time.

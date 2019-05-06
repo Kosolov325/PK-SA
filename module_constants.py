@@ -5,6 +5,31 @@
 # that it will be easy to change it if you need to.
 ##############################################################
 
+## PK.js SCRIPTS START ##
+
+pkjs_script_server = "@http://localhost/serverapi"
+pkjs_server_id = 1
+pkjs_api_key = "123"
+
+pkjs_default_script_message_color = 0xFFB6A37D
+
+pkjs_querystring = "?server="+str(pkjs_server_id)+"&apiKey="+pkjs_api_key
+
+# Actions
+pkjs_action_ping                            = 0
+pkjs_action_access_denied                   = 1
+pkjs_action_load_player_name_taken          = 2
+pkjs_action_load_player_already_connected   = 3
+pkjs_action_load_player                     = 4
+pkjs_action_load_gear                       = 5
+pkjs_action_strip_gear                      = 6
+pkjs_action_save_player_and_gear            = 7
+
+pkjs_action_bank_withdraw                   = 8
+pkjs_action_bank_deposit                    = 9
+
+## PK.js SCRIPTS END ##
+
 ########################################################
 ##  PLAYER SLOTS           #############################
 ########################################################
@@ -557,7 +582,7 @@ local_chat_color                      = 0xFFFFDD8A
 local_chat_shout_color                = 0xFFFF8C27
 local_animation_color                 = 0xFFFFBBAA
 admin_chat_color                      = 0xFFFF00FF
-script_message_color                  = 0xFFFF4300
+script_message_color                  = pkjs_default_script_message_color
 invalid_faction_color                 = 0xFF888888
 
 outlaw_rating_for_kill                = 2

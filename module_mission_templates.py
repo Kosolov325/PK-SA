@@ -189,7 +189,6 @@ after_mission_start_setup = (ti_after_mission_start, 0, 0, [], # spawn and move 
       (spawn_scene_prop, "spr_code_spawn_marker"),
     (try_end),
     (assign, "$g_spawned_bot_count", 0),
-    (call_script, "script_check_name_server"),
     (try_for_range, ":faction_id", castle_factions_begin, factions_end),
        (try_for_range, ":target_faction_id", castle_factions_begin, factions_end),
           (neq, ":faction_id", ":target_faction_id"),
@@ -202,14 +201,21 @@ after_mission_start_setup = (ti_after_mission_start, 0, 0, [], # spawn and move 
       (multiplayer_is_server),
       (call_script, "script_skybox_spawn_all"),
     (try_end),
+
+    ## PK.js SCRIPTS START ##
+    (call_script, "script_pkjs_ping"),
+    ## PK.js SCRIPTS END ##
     ])
 
 player_joined = (ti_server_player_joined, 0, 0, [], # server: handle connecting players
    [(store_trigger_param_1, ":player_id"),
     (call_script, "script_setup_player_joined", ":player_id"),
-    (call_script, "script_player_check_name", ":player_id"),
     (call_script, "script_update_ghost_mode_rule", ":player_id"),
     (call_script, "script_apply_mute", ":player_id", "$g_mute_all_players"),
+
+    ## PK.js SCRIPTS START ##
+    (call_script, "script_pkjs_load_player", ":player_id"),
+    ## PK.js SCRIPTS END ##
     ])
 
 player_exit = (ti_on_player_exit, 0, 0, [], # server: save player values on exit
@@ -228,6 +234,10 @@ agent_spawn = (ti_on_agent_spawn, 0, 0, [], # server and clients: set up new age
    [(store_trigger_param_1, ":agent_id"),
     (call_script, "script_on_agent_spawned", ":agent_id"),
     (call_script, "script_death_cam_off", ":agent_id"),
+
+    ## PK.js SCRIPTS START ##
+    (call_script, "script_pkjs_load_gear", ":agent_id"),
+    ## PK.js SCRIPTS END ##
 
     (try_begin),
       (multiplayer_is_server),
@@ -278,6 +288,11 @@ agent_killed = (ti_on_agent_killed_or_wounded, 0, 0, [], # server and clients: h
     (call_script, "script_death_cam", ":dead_agent_id"),
     (call_script, "script_apply_consequences_for_agent_death", ":dead_agent_id", ":killer_agent_id"),
     (multiplayer_is_server),
+
+    ## PK.js SCRIPTS START ##
+    (call_script, "script_pkjs_strip_gear", ":dead_agent_id", ":killer_agent_id"),
+    ## PK.js SCRIPTS END ##
+
     (call_script, "script_setup_agent_for_respawn", ":dead_agent_id"),
     (call_script, "script_check_animal_killed", ":dead_agent_id", ":killer_agent_id"),
     (call_script, "script_check_spawn_bots", ":dead_agent_id"),

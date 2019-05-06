@@ -269,7 +269,6 @@ g_extra_item_details_2_color
 g_extra_item_details_3_value
 g_extra_item_details_3_string_id
 g_extra_item_details_3_color
-g_name_server_enabled
 g_preset_message_display_enabled
 g_time_of_day
 g_day_duration
