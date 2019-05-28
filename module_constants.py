@@ -8,8 +8,8 @@
 ## PK.js SCRIPTS START ##
 
 pkjs_script_server = "@http://localhost/serverapi"
-pkjs_server_id = 1
-pkjs_api_key = "123"
+pkjs_server_id = "SERVER_ID"
+pkjs_api_key = "SERVER_API_KEY"
 
 pkjs_default_script_message_color = 0xFFB6A37D
 
