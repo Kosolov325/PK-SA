@@ -312,7 +312,8 @@ scripts.extend([
       (try_end),
 
       (try_begin),
-        (assign, reg19, -1),
+        (assign, reg19, 0),
+        (assign, reg20, 0),
         (agent_get_horse, ":horse_agent_id", ":agent_id"),
         (agent_is_active, ":horse_agent_id"),
         (agent_get_item_id, reg19, ":horse_agent_id"),
