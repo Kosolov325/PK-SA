@@ -13,7 +13,7 @@ pkjs_api_key = "SERVER_API_KEY"
 
 pkjs_default_script_message_color = 0xFFB6A37D
 
-pkjs_querystring = "?server="+str(pkjs_server_id)+"&apiKey="+pkjs_api_key
+pkjs_querystring = "?serverID="+str(pkjs_server_id)+"&apiKey="+pkjs_api_key
 
 # Actions
 pkjs_action_ping                            = 0
@@ -21,12 +21,14 @@ pkjs_action_access_denied                   = 1
 pkjs_action_load_player_name_taken          = 2
 pkjs_action_load_player_already_connected   = 3
 pkjs_action_load_player                     = 4
-pkjs_action_load_gear                       = 5
-pkjs_action_strip_gear                      = 6
-pkjs_action_save_player_and_gear            = 7
+pkjs_action_load_admin                      = 5
+pkjs_action_load_gear                       = 6
+pkjs_action_load_fail_kick                  = 7
+pkjs_action_strip_gear                      = 8
+pkjs_action_save_player_and_gear            = 9
 
-pkjs_action_bank_withdraw                   = 8
-pkjs_action_bank_deposit                    = 9
+pkjs_action_bank_withdraw                   = 10
+pkjs_action_bank_deposit                    = 11
 
 ## PK.js SCRIPTS END ##
 
