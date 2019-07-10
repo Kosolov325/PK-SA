@@ -7,7 +7,7 @@
 
 ## PK.js SCRIPTS START ##
 
-pkjs_script_server = "@http://localhost/serverapi"
+pkjs_script_server = "@SERVER_ADDRESS/serverapi"
 pkjs_server_id = "SERVER_ID"
 pkjs_api_key = "SERVER_API_KEY"
 
