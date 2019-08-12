@@ -181,6 +181,7 @@ scripts.extend([
       (try_begin),
         (neq, reg5, -1),
         (agent_set_slot, ":agent_id", slot_agent_food_amount, reg5),
+        (multiplayer_send_3_int_to_player, ":player_id", server_event_agent_set_slot, ":agent_id", slot_agent_food_amount, reg5),
       (try_end),
 
       (try_begin),
