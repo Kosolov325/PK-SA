@@ -402,12 +402,9 @@ scripts.extend([
       (position_get_y, reg22, pos1),
       (position_get_z, reg23, pos1),
 
-      (call_script, "script_cf_agent_consume_items", ":agent_id", reg11, reg12, reg13, reg14),
-      (call_script, "script_player_adjust_gold", ":player_id", 0, 0),
-
-      (neg|player_is_admin, ":player_id"),
       (try_begin),
         (agent_is_alive, ":agent_id"),
+        (neg|player_is_admin, ":player_id"),
         (send_message_to_url,
          pkjs_script_server + "/saveplayer" + pkjs_querystring +
          "&guid={reg0}&name={s0}&factionID={reg1}&classID={reg2}&pouchGold={reg3}" +
@@ -418,10 +415,14 @@ scripts.extend([
          "&horse={reg19}&horseHealth={reg20}" +
          "&xPosition={reg21}&yPosition={reg22}&zPosition={reg23}&alive"),
       (else_try),
+        (neg|player_is_admin, ":player_id"),
         (send_message_to_url,
          pkjs_script_server + "/saveplayer" + pkjs_querystring +
          "&guid={reg0}&name={s0}&factionID={reg1}&classID={reg2}"),
       (try_end),
+
+      (call_script, "script_cf_agent_consume_items", ":agent_id", reg11, reg12, reg13, reg14),
+      (call_script, "script_player_adjust_gold", ":player_id", 0, 0),
     (try_end),
   ]),
 
