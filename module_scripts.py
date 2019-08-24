@@ -227,9 +227,9 @@ scripts.extend([
        (agent_set_hit_points, ":horse_agent_id", reg19, 0),
      (try_end),
 
-      (str_store_player_username, s1, ":player_id"),
+      (str_store_player_username, s2, ":player_id"),
       (player_get_unique_id, reg1, ":player_id"),
-      (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@Welcome {s1} (GUID: {reg1}). {s0}"),
+      (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@Welcome {s2} (GUID: {reg1}, PIN: {s0}). {s1}"),
       (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@You have {reg3} gold in the bank."),
 
      (else_try),
