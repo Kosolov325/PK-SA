@@ -615,9 +615,9 @@ str_scene_name_7 Stormlands
 str_scene_name_8 The_North
 str_scene_name_9 Dormarsh_Mountains
 str_scene_name_10 Reykjarvik
-str_scene_name_11 War_Of_The_Three_Monarchs
-str_scene_name_12 Westeros
-str_scene_name_13 Blank_Scene_13
+str_scene_name_11 Rhadaron
+str_scene_name_12 War_Of_The_Three_Monarchs
+str_scene_name_13 Westeros
 str_scene_name_14 Blank_Scene_14
 str_scene_name_15 Blank_Scene_15
 str_scene_name_16 Blank_Scene_16
