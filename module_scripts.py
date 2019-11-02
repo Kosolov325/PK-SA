@@ -433,32 +433,55 @@ scripts.extend([
     (multiplayer_send_int_to_player, ":player_id", server_event_bank_management, ":instance_id"),
     ]),
 
+  ("cf_bank_anti_spam",
+   [(store_script_param, ":player_id", 1),  # player ID
+
+    (player_get_slot, ":acceptable_bank_time", ":player_id", slot_player_pkjs_last_bank),
+    (val_add, ":acceptable_bank_time", pkjs_bank_anti_spam_delay),
+    (store_mission_timer_a, ":current_time"),
+
+    (ge, ":current_time", ":acceptable_bank_time"),
+
+    (player_set_slot, ":player_id", slot_player_pkjs_last_bank, ":current_time"),
+    ]),
+
   ("bank_withdraw",
    [(store_script_param, reg0, 1), # player ID
     (store_script_param, reg2, 2), # amount
 
-    (player_get_unique_id, reg1, reg0),
-    (send_message_to_url, pkjs_script_server + "/bankwithdraw" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&amount={reg2}"),
+    (try_begin),
+      (call_script, "script_cf_bank_anti_spam", reg0),
+
+      (player_get_unique_id, reg1, reg0),
+      (send_message_to_url, pkjs_script_server + "/bankwithdraw" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&amount={reg2}"),
+    (else_try),
+      (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You are clicking too quickly!"),
+    (try_end),
    ]),
 
   ("bank_deposit",
    [(store_script_param, reg0, 1), # player ID
     (store_script_param, reg2, 2), # amount
 
-    (player_get_unique_id, reg1, reg0),
-    (player_get_gold, ":current_gold", reg0),
-
     (try_begin),
-      (le, ":current_gold", 0),
-      (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You do not have any money to deposit."),
-    (else_try),
-      (lt, ":current_gold", reg2),
-      (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You do not have that much money to deposit."),
-    (else_try),
-      (call_script, "script_player_adjust_gold", reg0, reg2, -1),
-      (send_message_to_url, pkjs_script_server + "/bankdeposit" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&amount={reg2}"),
-    (try_end),
+      (call_script, "script_cf_bank_anti_spam", reg0),
 
+      (player_get_unique_id, reg1, reg0),
+      (player_get_gold, ":current_gold", reg0),
+
+      (try_begin),
+        (le, ":current_gold", 0),
+        (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You do not have any money to deposit."),
+      (else_try),
+        (lt, ":current_gold", reg2),
+        (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You do not have that much money to deposit."),
+      (else_try),
+        (call_script, "script_player_adjust_gold", reg0, reg2, -1),
+        (send_message_to_url, pkjs_script_server + "/bankdeposit" + pkjs_querystring + "&playerID={reg0}&guid={reg1}&amount={reg2}"),
+      (try_end),
+    (else_try),
+      (multiplayer_send_string_to_player, reg0, server_event_script_message, "@You are clicking too quickly!"),
+    (try_end),
    ]),
 
   ## PK.js SCRIPTS END ##

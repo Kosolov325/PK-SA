@@ -15,6 +15,8 @@ pkjs_default_script_message_color = 0xFFB6A37D
 
 pkjs_querystring = "?serverID="+str(pkjs_server_id)+"&apiKey="+pkjs_api_key
 
+pkjs_bank_anti_spam_delay = 1
+
 # Actions
 pkjs_action_ping                            = 0
 pkjs_action_access_denied                   = 1
@@ -116,6 +118,10 @@ suicide_delay                         = 15 # suicide delay time
 slot_player_first_spawn_occured       = 65
 #End
 slot_player_custom_banner_mesh_id     = 66
+
+## PK.js SCRIPTS START ##
+slot_player_pkjs_last_bank            = 67
+## PK.js SCRIPTS END ##
 
 ########################################################
 ##  AGENT SLOTS            #############################
