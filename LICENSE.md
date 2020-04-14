@@ -1,11 +1,11 @@
 Any modifications from the original Persistent Kingdoms are under the Copyright (c) 2019
-Phoenix Dev Team (https://github.com/SmartPhoenix), PK.js
+Phoenix Dev Team (https://github.com/OutlawByteStudios), PK.js
 All rights reserved.
 Please see the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 below for terms and conditions of use.
 
 Any modifications made from the original Persistent World are under the Copyright (c) 2018
-Phoenix Dev Team (https://github.com/SmartPhoenix), Persistent Kingdoms
+Phoenix Dev Team (https://github.com/OutlawByteStudios), Persistent Kingdoms
 All rights reserved.
 
 The conditions of source code use are under the same terms of the Persistent World license,

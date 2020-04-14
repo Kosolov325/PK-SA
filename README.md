@@ -1,15 +1,14 @@
 <div align="center">
 
 ![Logo](pk-js.png)
-#### Module System for the [PK.js](https://github.com/SmartPhoenix/PK.js) Script Set & Admin Panel
+#### Module System for the [PK.js](https://github.com/OutlawByteStudios/PK.js) Script Set & Admin Panel
 
-![GitHub release](https://img.shields.io/github/release/SmartPhoenix/PK.js.svg?style=flat-square)
-![GitHub contributors](https://img.shields.io/github/contributors/SmartPhoenix/PK.js-Module-System.svg?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/OutlawByteStudios/PK.js-Module-System.svg?style=flat-square)
 [![Discord](https://img.shields.io/discord/450652484634148875.svg?style=flat-square&logo=discord)](https://discord.gg/jwM54DB)
 [![Steam Group](https://img.shields.io/badge/Steam-Group-lightgrey.svg?style=flat-square)](https://steamcommunity.com/groups/persistent-kingdoms)
 
-[![GitHub issues](https://img.shields.io/github/issues/SmartPhoenix/PK.js-Module-System.svg?style=flat-square)](https://github.com/SmartPhoenix/PK.js/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/SmartPhoenix/PK.js-Module-System.svg?style=flat-square)](https://github.com/SmartPhoenix/PK.js/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/OutlawByteStudios/PK.js-Module-System.svg?style=flat-square)](https://github.com/OutlawByteStudios/PK.js/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/OutlawByteStudios/PK.js-Module-System.svg?style=flat-square)](https://github.com/OutlawByteStudios/PK.js/pulls)
 <br><br>
 </div>
 
@@ -18,13 +17,13 @@
 ## License
 ```
 Any modifications from the original Persistent Kingdoms are under the Copyright (c) 2019
-Phoenix Dev Team (https://github.com/SmartPhoenix), PK.js
+Phoenix Dev Team (https://github.com/OutlawByteStudios), PK.js
 All rights reserved.
 Please see the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 in LICENCE.md for terms and conditions of use.
 
 Any modifications made from the original Persistent World are under the Copyright (c) 2018
-Phoenix Dev Team (https://github.com/SmartPhoenix), Persistent Kingdoms
+Phoenix Dev Team (https://github.com/OutlawByteStudios), Persistent Kingdoms
 All rights reserved.
 
 The conditions of source code use are under the same terms of the Persistent World license,
