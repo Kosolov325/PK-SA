@@ -253,7 +253,6 @@ agent_spawn = (ti_on_agent_spawn, 0, 0, [], # server and clients: set up new age
         (call_script, "script_synchronize_lord_or_marshal", ":player_id"),
       (try_end),
 
-      (call_script, "script_log_equipment", ":player_id"),
       (call_script, "script_setup_singings", ":player_id"),
     (try_end),
 

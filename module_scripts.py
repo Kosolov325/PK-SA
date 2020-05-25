@@ -229,6 +229,7 @@ scripts.extend([
 
       (str_store_player_username, s2, ":player_id"),
       (player_get_unique_id, reg1, ":player_id"),
+      (call_script, "script_log_equipment", ":player_id"),
       (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@Welcome {s2} (GUID: {reg1}, PIN: {s0}). {s1}"),
       (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@You have {reg3} gold in the bank."),
 
