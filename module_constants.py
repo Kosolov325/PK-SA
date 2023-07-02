@@ -365,6 +365,7 @@ slot_faction_lord_last_seen_time      = 4
 slot_faction_castle_banner_variant    = 5 # work around an unwanted engine optimization: change tableau id used when changing faction banners to force them to update
 slot_faction_list_button_id           = 6 # overlay id in the faction list presentation
 slot_faction_is_locked                = 7 # 1 if an adminstrator locked the faction to prevent lord polls
+slot_faction_rent                     = 8
 
 slot_faction_poll_last_time           = 20
 poll_cooldown_time                    = 20

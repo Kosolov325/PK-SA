@@ -1,5 +1,5 @@
 # set this to your module directory, using forward slashes (/) not backward slashes (\):
-export_dir = "Persistent Kingdoms"
+export_dir = "../Persistent Kingdoms"
 
 import os
 import sys
