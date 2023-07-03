@@ -1,0 +1,578 @@
+Straw Hat                      Tailoring 1               Time:  1 Wheat Sheaf
+Head Wrapping                  Tailoring 1               Time:  1 Small Linen Cloth
+Headcloth                      Tailoring 1               Time:  2 Small Linen Cloth
+Woolen Cap                     Tailoring 1               Time:  2 Small Linen Cloth
+Felt Hat                       Tailoring 1               Time:  2 Small Linen Cloth
+Head Cloth                     Tailoring 1               Time:  1 Small Linen Cloth
+Head Cloth                     Tailoring 1               Time:  1 Small Linen Cloth
+Crown of Flowers               Tailoring 2               Time:  5 Small Linen Cloth
+Blue Head Scarf                Tailoring 2               Time:  3 Small Linen Cloth
+Leather Head Scarf             Tailoring 2               Time:  3 Leather Piece
+Lady Head Cloth                Tailoring 1               Time:  2 Small Linen Cloth
+Lady Head Cloth                Tailoring 1               Time:  2 Small Linen Cloth
+Wimple                         Tailoring 2               Time:  3 Small Linen Cloth
+Wimple                         Tailoring 2               Time:  3 Small Linen Cloth
+Barbette                       Tailoring 2               Time:  3 Small Linen Cloth
+Arming Cap                     Tailoring 1               Time:  2 Small Linen Cloth
+Woolen Hood                    Tailoring 2               Time:  2 Small Linen Cloth
+Fur Hat                        Tailoring 1               Time:  3 Leather Piece
+Felt Hat                       Tailoring 1               Time:  2 Small Linen Cloth
+Felt Hat                       Tailoring 2               Time:  2 Small Linen Cloth
+Leather Cap                    Tailoring 2               Time:  3 Leather Piece
+Hood                           Tailoring 1               Time:  2 Small Linen Cloth
+Hood                           Tailoring 1               Time:  2 Small Linen Cloth
+Hood                           Tailoring 1               Time:  2 Small Linen Cloth
+Hood                           Tailoring 1               Time:  2 Small Linen Cloth
+Nomad Cap                      Engineer 2 / Tailoring 3  Time:  5 Iron Piece, Leather Piece
+Nomad Cap                      Tailoring 2               Time:  4 Leather Piece
+Black Hood                     Tailoring 1               Time:  3 Small Linen Cloth
+Surgeon's Coif                 Tailoring 1               Time:  2 Small Linen Cloth
+Pilgrim Hood                   Tailoring 1               Time:  2 Small Linen Cloth
+Priestly Coif                  Tailoring 1               Time:  4 Small Linen Cloth
+Padded Coif                    Tailoring 2               Time:  5 Small Linen Cloth, Small Linen Cloth
+Turban                         Tailoring 1               Time:  1 Small Linen Cloth, Small Linen Cloth
+Steppe Cap                     Tailoring 2               Time:  4 Leather Piece, Leather Piece
+Steppe Cap                     Engineer 2 / Tailoring 2  Time:  5 Leather Piece, Iron Piece
+Leather Helmet                 Engineer 2                Time:  5 Leather Piece, Iron Piece
+Cap with Fur                   Engineer 2                Time:  5 Leather Piece, Iron Piece
+Steppe Cap                     Engineer 2                Time:  5 Leather Piece, Iron Piece
+Leather Warrior Cap            Engineer 2 / Tailoring 3  Time:  5 Leather Piece, Leather Piece
+Turban with Warrior Cap        Engineer 2                Time:  5 Iron Piece, Small Linen Cloth
+Leather Helmet                 Engineer 2                Time:  6 Iron Piece, Leather Piece
+Skullcap                       Engineer 2                Time:  6 Iron Piece, Leather Piece
+Fur Helmet                     Engineer 2                Time:  6 Short Iron Bar, Leather Piece
+Bishop's Mitre                 Engineer 3 / Tailoring 3  Time: 10 Small Linen Cloth
+Mail Coif                      Engineer 3                Time:  7 Iron Piece, Iron Piece
+Footman's Helmet               Engineer 2                Time:  7 Short Iron Bar, Small Linen Cloth
+Horseman Helmet                Engineer 3                Time:  7 Short Iron Bar, Linen Cloth
+Nasal Helmet                   Engineer 2                Time:  7 Short Iron Bar, Leather Piece
+Helmet with Cap                Engineer 2                Time:  7 Short Iron Bar, Small Linen Cloth
+Footman Helmet                 Engineer 3                Time:  8 Short Iron Bar, Leather Piece
+War Helmet                     Engineer 3                Time:  8 Short Iron Bar, Iron Piece
+Segmented Helmet               Engineer 3                Time:  8 Short Iron Bar, Linen Cloth
+Spiked Cap                     Engineer 4                Time:  8 Short Iron Bar, Iron Piece
+Helmet with Neckguard          Engineer 3                Time:  9 Short Iron Bar, Leather Piece
+Flat Topped Helmet             Engineer 4                Time:  9 Short Iron Bar, Iron Piece
+Fighter Helmet                 Engineer 4                Time: 10 Short Iron Bar, Iron Piece
+Kettle Hat                     Engineer 4                Time: 10 Short Iron Bar, Iron Piece
+Keffiyeh Helmet                Engineer 4                Time: 10 Short Iron Bar, Small Linen Cloth
+Helmet with Lamellar Guard     Engineer 4                Time: 10 Short Iron Bar, Leather Piece
+Spiked Helmet                  Engineer 4                Time: 11 Short Iron Bar, Iron Piece
+Mail Coif                      Engineer 4                Time: 11 Short Iron Bar, Iron Piece, Small Linen Cloth
+Huscarl's Helmet               Engineer 5                Time: 12 Short Iron Bar, Iron Piece
+Bascinet                       Engineer 5                Time: 13 Short Iron Bar, Leather Piece
+Bascinet with Aventail         Engineer 5                Time: 13 Short Iron Bar, Short Iron Bar
+Bascinet with Nose Guard       Engineer 5                Time: 13 Short Iron Bar, Short Iron Bar
+Nobleman Helmet                Engineer 5                Time: 14 Short Iron Bar, Iron Piece
+Guard Helmet                   Engineer 5                Time: 14 Short Iron Bar, Iron Piece
+Veiled Helmet                  Engineer 5                Time: 14 Short Iron Bar, Short Iron Bar
+War Helmet                     Engineer 5                Time: 14 Short Iron Bar, Short Iron Bar
+Warlord Helmet                 Engineer 5                Time: 15 Short Iron Bar, Short Iron Bar
+Bishop's Helm                  Engineer 6                Time: 18 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Full Helm                      Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Leather Piece
+War Mask                       Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Iron Piece
+War Mask                       Engineer 6                Time: 18 Short Iron Bar, Short Iron Bar, Iron Piece
+Great Helmet                   Engineer 6                Time: 20 Iron Bar, Small Linen Cloth
+Winged Great Helmet            Engineer 6                Time: 21 Iron Bar, Short Iron Bar, Small Linen Cloth
+Black Helmet                   Engineer 6                Time: 21 Iron Bar, Small Linen Cloth
+Shirt                          Tailoring 1               Time:  1 Linen Cloth
+Linen Tunic                    Tailoring 1               Time:  2 Linen Cloth
+Black Robe                     Tailoring 1               Time:  3 Linen Cloth
+Dress                          Tailoring 1               Time:  3 Linen Cloth
+Blue Dress                     Tailoring 1               Time:  3 Linen Cloth
+Peasant Dress                  Tailoring 1               Time:  3 Linen Cloth
+Woolen Dress                   Tailoring 1               Time:  3 Linen Cloth
+Gray Dress                     Tailoring 1               Time:  3 Linen Cloth
+Brown Dress                    Tailoring 1               Time:  3 Linen Cloth
+Red Dress                      Tailoring 2               Time:  5 Linen Cloth
+Green Dress                    Tailoring 2               Time:  5 Linen Cloth
+Blue Dress                     Tailoring 2               Time:  5 Linen Cloth
+Red Pattern Dress              Tailoring 2               Time:  5 Linen Cloth
+Red Dress                      Tailoring 2               Time:  5 Linen Cloth
+Brown Dress                    Tailoring 2               Time:  5 Linen Cloth
+Green Dress                    Tailoring 2               Time:  5 Linen Cloth
+Purple Dress                   Tailoring 2               Time:  5 Linen Cloth
+Orange Dress                   Tailoring 2               Time:  5 Linen Cloth
+Blue Dress                     Tailoring 2               Time:  5 Linen Cloth
+Leather Dress                  Tailoring 2               Time:  6 Leather Roll
+Bride Dress                    Tailoring 2               Time:  7 Linen Cloth
+Tunic with Green Cape          Tailoring 1               Time:  3 Linen Cloth
+Rough Tunic                    Tailoring 1               Time:  2 Linen Cloth
+Red Shirt                      Tailoring 2               Time:  2 Linen Cloth
+Pelt Coat                      Tailoring 1               Time:  2 Leather Roll, Small Linen Cloth
+Worn Robe                      Tailoring 1               Time:  3 Linen Cloth
+Worn Robe                      Tailoring 1               Time:  3 Linen Cloth
+Rawhide Coat                   Tailoring 1               Time:  3 Leather Roll, Small Linen Cloth
+Tunic with Vest                Tailoring 1               Time:  1 Linen Cloth
+Leather Apron                  Tailoring 1               Time:  2 Leather Piece, Leather Piece, Small Linen Cloth
+Fur Coat                       Tailoring 2               Time:  4 Leather Roll
+Friar's Robe                   Tailoring 2               Time:  2 Linen Cloth, Stick
+Skirmisher Armor               Tailoring 2               Time:  5 Linen Cloth
+Rich Outfit                    Tailoring 2               Time:  5 Linen Cloth
+Tabard                         Tailoring 2               Time:  4 Linen Cloth
+Tribesman Armor                Tailoring 1               Time:  3 Linen Cloth, Leather Piece
+Leather Vest                   Tailoring 2               Time:  5 Leather Roll
+Heraldic Leather Vest          Tailoring 2               Time:  5 Leather Roll
+Leather Jacket                 Tailoring 2               Time:  6 Leather Roll
+Priestly Robes                 Tailoring 3               Time:  8 Linen Cloth, Linen Cloth, Iron Piece
+Arena Tunic                    Tailoring 2               Time:  6 Linen Cloth
+Leather Breastplate            Engineer 2 / Tailoring 2  Time:  6 Linen Cloth, Leather Piece
+Leather Armor                  Engineer 2                Time:  6 Leather Roll, Iron Piece
+Pilgrim Disguise               Tailoring 1               Time:  5 Linen Cloth, Leather Piece
+Red Gambeson                   Engineer 2 / Tailoring 3  Time:  7 Linen Cloth, Leather Piece
+Aketon                         Engineer 2 / Tailoring 3  Time:  7 Linen Cloth
+Padded Cloth                   Engineer 2 / Tailoring 3  Time:  7 Linen Cloth
+Archer's Padded Vest           Engineer 2 / Tailoring 2  Time:  7 Linen Cloth
+Nomad Vest                     Engineer 2 / Tailoring 3  Time:  7 Leather Roll
+Ragged Outfit                  Engineer 2 / Tailoring 2  Time:  6 Linen Cloth
+Surgeon's Coat                 Engineer 2                Time:  7 Linen Cloth, Board, Iron Piece
+Nomad Armor                    Engineer 2 / Tailoring 2  Time:  7 Leather Roll
+Nomad Robe                     Engineer 2 / Tailoring 3  Time:  8 Linen Cloth, Leather Piece
+Light Leather                  Engineer 2 / Tailoring 3  Time:  8 Leather Roll
+Leather Jerkin                 Engineer 2 / Tailoring 3  Time:  8 Leather Roll, Small Linen Cloth
+Padded Leather                 Engineer 2 / Tailoring 3  Time:  8 Leather Roll, Small Linen Cloth
+Arena Armor                    Engineer 2                Time:  9 Linen Cloth, Short Iron Bar
+Tribal Warrior Outfit          Engineer 3 / Tailoring 3  Time:  9 Leather Roll
+Leather Armor                  Engineer 3                Time:  9 Leather Roll
+Courtly Outfit                 Tailoring 3               Time: 10 Linen Cloth, Leather Piece
+Nobleman Outfit                Tailoring 3               Time: 10 Linen Cloth, Leather Piece
+Brown Mail Shirt               Engineer 3                Time: 10 Linen Cloth, Short Iron Bar
+Studded Leather Coat           Engineer 3                Time: 10 Leather Roll, Small Linen Cloth, Short Iron Bar
+Byrnie                         Engineer 3                Time: 11 Short Iron Bar, Linen Cloth
+Haubergeon                     Engineer 3                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Guard Armor                    Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Lamellar Vest                  Engineer 4                Time: 11 Short Iron Bar, Linen Cloth
+Lamellar Vest                  Engineer 4                Time: 11 Short Iron Bar, Linen Cloth
+Mail Shirt                     Engineer 4                Time: 11 Short Iron Bar, Linen Cloth
+Mail Hauberk                   Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Orange Mail Shirt              Engineer 5                Time: 12 Short Iron Bar, Short Iron Bar, Linen Cloth
+Bishop's Armor                 Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Linen Cloth, Gold Bar
+Surcoat over Mail              Engineer 5                Time: 12 Short Iron Bar, Short Iron Bar, Linen Cloth
+Surcoat over Mail              Engineer 5                Time: 12 Short Iron Bar, Short Iron Bar, Linen Cloth
+Brigandine                     Engineer 6                Time: 13 Short Iron Bar, Short Iron Bar, Leather Roll
+Mail Robe                      Engineer 6                Time: 14 Short Iron Bar, Short Iron Bar, Linen Cloth, Small Linen Cloth
+Lamellar Armor                 Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Linen Cloth
+Scale Armor                    Engineer 6                Time: 14 Short Iron Bar, Short Iron Bar, Linen Cloth
+Banded Armor                   Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Leather Roll
+Cuir Bouilli                   Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Leather Roll
+Coat of Plates                 Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Leather Roll
+Heraldic Coat of Plates        Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Leather Roll
+Heraldic Elite Armor           Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Elite Armor                    Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Elite Armor                    Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Plate Armor                    Engineer 7                Time: 23 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Black Armor                    Engineer 7                Time: 24 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Light Heraldic Mail            Engineer 4                Time: 10 Short Iron Bar, Linen Cloth, Leather Piece
+Heraldic Mail with Tunic       Engineer 4                Time: 12 Short Iron Bar, Short Iron Bar, Linen Cloth
+Heraldic Mail with Tabard      Engineer 5                Time: 14 Short Iron Bar, Short Iron Bar, Short Iron Bar, Linen Cloth
+Heraldic Mail with Surcoat     Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Short Iron Bar, Linen Cloth
+Wrapping Boots                 Tailoring 1               Time:  1 Small Linen Cloth
+Woolen Hose                    Tailoring 1               Time:  1 Small Linen Cloth
+Friar's Sandals                Tailoring 1               Time:  1 Leather Piece
+Blue Hose                      Tailoring 1               Time:  1 Small Linen Cloth
+Bride Shoes                    Tailoring 2               Time:  5 Small Linen Cloth
+Priestly Leggings              Tailoring 2               Time:  2 Small Linen Cloth, Small Linen Cloth
+Pointed Shoes                  Tailoring 1               Time:  2 Small Linen Cloth, Small Linen Cloth
+Hunter Boots                   Tailoring 2               Time:  1 Leather Piece, Leather Piece
+Hide Boots                     Tailoring 2               Time:  2 Leather Piece, Leather Piece
+Ankle Boots                    Tailoring 2               Time:  3 Small Linen Cloth, Small Linen Cloth
+Nomad Boots                    Tailoring 2               Time:  3 Small Linen Cloth, Leather Piece
+Light Leather Boots            Tailoring 2               Time:  3 Leather Piece, Leather Piece
+Leather Boots                  Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Pointed Leather Boots          Engineer 3 / Tailoring 3  Time:  4 Leather Piece, Leather Piece
+Black Leather Boots            Engineer 3 / Tailoring 3  Time:  4 Leather Piece, Leather Piece
+Plated Boots                   Engineer 3 / Tailoring 3  Time:  5 Leather Piece, Leather Piece, Iron Piece
+Splinted Leather Greaves       Engineer 3                Time:  5 Leather Piece, Leather Piece, Iron Piece
+Bishop's Chausses              Engineer 3                Time:  6 Leather Piece, Iron Piece, Iron Piece
+Mail Chausses                  Engineer 4                Time:  6 Leather Piece, Iron Piece, Iron Piece
+Splinted Greaves               Engineer 4                Time:  6 Small Linen Cloth, Iron Piece, Iron Piece
+Mail Boots                     Engineer 5                Time:  6 Leather Piece, Iron Piece, Iron Piece
+Mail Boots                     Engineer 5                Time:  7 Leather Piece, Short Iron Bar, Short Iron Bar
+Iron Greaves                   Engineer 6                Time:  8 Leather Piece, Short Iron Bar, Short Iron Bar, Short Iron Bar
+Plate Boots                    Engineer 6                Time: 10 Leather Piece, Leather Piece, Iron Bar, Iron Bar
+Black Greaves                  Engineer 6                Time: 11 Leather Piece, Leather Piece, Iron Bar, Iron Bar
+Leather Gloves                 Engineer 4 / Tailoring 2  Time:  2 Leather Piece
+Bishop's Gloves                Tailoring 3               Time:  4 Small Linen Cloth, Small Linen Cloth
+Mail Mittens                   Engineer 3                Time:  4 Iron Piece
+Lamellar Gauntlets             Engineer 4                Time:  5 Leather Piece, Iron Piece
+Scale Gauntlets                Engineer 5                Time:  5 Leather Piece, Iron Piece
+Gauntlets                      Engineer 6                Time:  6 Leather Piece, Short Iron Bar, Short Iron Bar
+Practice Sword                 Engineer 2                Time:  1 Short Wooden Pole
+Heavy Practice Sword           Engineer 2                Time:  2 Short Wooden Pole
+Flanged Mace                   Engineer 2                Time:  4 Short Iron Bar, Short Iron Bar
+Spiked Mace                    Engineer 2                Time:  4 Short Iron Bar, Short Iron Bar
+Knobbed Mace                   Engineer 1                Time:  3 Iron Piece, Stick
+Winged Mace                    Engineer 1                Time:  3 Iron Piece, Stick
+Spiked Staff                   Engineer 2                Time:  3 Short Iron Bar, Short Wooden Pole
+Long Spiked Club               Engineer 2                Time:  3 Wooden Pole, Iron Piece
+Long Hafted Spiked Mace        Engineer 3                Time:  4 Short Iron Bar, Wooden Pole
+Fighting Pick                  Engineer 2                Time:  4 Short Iron Bar, Stick
+Military Pick                  Engineer 3                Time:  5 Iron Bar
+Military Sickle                Engineer 2                Time:  5 Short Iron Bar, Stick
+Military Hammer                Engineer 3                Time:  4 Short Iron Bar, Stick
+Morningstar                    Engineer 4                Time: 14 Long Iron Bar, Short Iron Bar
+Falchion                       Engineer 2                Time:  4 Iron Bar
+Curved Sword                   Engineer 3                Time:  6 Iron Bar
+Sword                          Engineer 3                Time:  7 Iron Bar
+Short Sword                    Engineer 3                Time:  6 Iron Bar
+Arming Sword                   Engineer 3                Time:  8 Iron Bar
+Knightly Sword                 Engineer 4                Time: 10 Iron Bar
+Nordic Sword                   Engineer 3                Time:  7 Iron Bar
+Nordic Short Sword             Engineer 3                Time:  6 Iron Bar
+Nordic Long Sword              Engineer 3                Time:  8 Iron Bar
+Arabian Sword                  Engineer 3                Time:  6 Iron Bar
+Arabian Arming Sword           Engineer 3                Time:  7 Iron Bar
+Arabian Cavalry Sword          Engineer 4                Time:  9 Iron Bar
+Arabian Guard Sword            Engineer 4                Time:  8 Iron Bar
+Scimitar                       Engineer 3                Time:  9 Iron Bar
+Elite Scimitar                 Engineer 4                Time: 10 Iron Bar
+Sabre                          Engineer 3                Time:  8 Iron Bar
+Heavy Sabre                    Engineer 4                Time: 11 Iron Bar
+Two Handed Sabre               Engineer 6                Time: 14 Long Iron Bar
+War Cleaver                    Engineer 4                Time:  9 Long Iron Bar
+Soldier's Cleaver              Engineer 2                Time:  4 Iron Bar
+Military Cleaver               Engineer 2                Time:  5 Iron Bar
+Bastard Sword                  Engineer 5                Time: 11 Long Iron Bar
+Heavy Bastard Sword            Engineer 5                Time: 12 Long Iron Bar
+Two Handed Sword               Engineer 6                Time: 13 Long Iron Bar
+Great Sword                    Engineer 7                Time: 15 Long Iron Bar
+One Handed War Axe             Engineer 2                Time:  3 Short Iron Bar, Stick
+One Handed Axe                 Engineer 2                Time:  3 Short Iron Bar, Stick
+One Handed Battle Axe          Engineer 3                Time:  4 Short Iron Bar, Stick
+Spiked One Handed Battle Axe   Engineer 3                Time:  4 Short Iron Bar, Stick
+Iron Battle Axe                Engineer 3                Time:  6 Iron Bar
+Iron War Axe                   Engineer 3                Time:  6 Iron Bar
+Two Handed Axe                 Engineer 3                Time:  7 Short Wooden Pole, Iron Bar
+Two Handed War Axe             Engineer 4                Time:  9 Short Wooden Pole, Iron Bar
+Shortened Voulge               Engineer 5                Time: 10 Short Wooden Pole, Iron Bar
+Bardiche                       Engineer 5                Time: 11 Short Wooden Pole, Iron Bar
+Shortened Military Scythe      Engineer 3                Time:  9 Long Iron Bar, Stick
+Two Handed Iron Axe            Engineer 5                Time:  9 Long Iron Bar
+Two Handed Iron Axe            Engineer 6                Time: 11 Long Iron Bar
+Long Axe                       Engineer 5                Time: 13 Wooden Pole, Iron Bar
+Glaive                         Engineer 3                Time:  9 Wooden Pole, Iron Bar
+Staff                          N o n e                   Time:  1 Wooden Pole
+Quarter Staff                  Engineer 1                Time:  1 Wooden Pole
+Iron Staff                     Engineer 2                Time:  3 Long Iron Bar
+Shortened Spear                Engineer 1                Time:  2 Wooden Pole, Iron Piece
+Spear                          Engineer 2                Time:  2 Wooden Pole, Iron Piece
+Bamboo Spear                   Engineer 2                Time:  3 Wooden Pole, Iron Piece
+War Spear                      Engineer 2                Time:  2 Wooden Pole, Iron Piece
+Light Lance                    Engineer 2                Time:  2 Wooden Pole, Iron Piece
+Lance                          Engineer 2                Time:  3 Wooden Pole, Iron Piece
+Heavy Lance                    Engineer 2                Time:  3 Wooden Pole, Iron Piece
+Great Lance                    Engineer 3                Time:  4 Wooden Pole, Iron Piece, Iron Piece
+Jousting Lance                 Engineer 3                Time:  4 Wooden Pole, Iron Piece, Iron Piece
+Awlpike                        Engineer 2                Time:  3 Wooden Pole, Short Iron Bar
+Long Awlpike                   Engineer 2                Time:  4 Wooden Pole, Short Iron Bar
+Pike                           Engineer 3                Time:  5 Wooden Pole, Iron Piece
+War Hammer                     Engineer 4                Time:  9 Wooden Pole, Short Iron Bar
+Bishop's Crosier               Engineer 6                Time: 12 Wooden Pole, Gold Bar
+Hunting Bow                    Engineer 2                Time:  2 Short Wooden Pole
+Short Bow                      Engineer 2                Time:  3 Short Wooden Pole
+Nomad Bow                      Engineer 3                Time:  3 Short Wooden Pole
+Long Bow                       Engineer 3                Time:  4 Wooden Pole
+Khergit Bow                    Engineer 3                Time:  6 Short Wooden Pole
+Strong Bow                     Engineer 4                Time:  7 Short Wooden Pole
+War Bow                        Engineer 5                Time:  9 Wooden Pole
+Arrows                         Engineer 1                Time:  2 Stick
+Barbed Arrows                  Engineer 1                Time:  3 Stick, Iron Piece
+Broadhead Arrows               Engineer 1                Time:  4 Stick, Iron Piece
+Bodkin Arrows                  Engineer 1                Time:  4 Stick, Iron Piece
+Hunting Crossbow               Engineer 2                Time:  5 Iron Piece, Stick
+Light Crossbow                 Engineer 3                Time:  6 Iron Piece, Stick
+Crossbow                       Engineer 4                Time:  8 Iron Piece, Stick
+Heavy Crossbow                 Engineer 5                Time: 10 Iron Piece, Stick
+Siege Crossbow                 Engineer 6                Time: 15 Iron Piece, Stick
+Bolts                          Engineer 1                Time:  2 Stick
+Steel Bolts                    Engineer 1                Time:  4 Stick, Iron Piece
+Practice Shield                Engineer 1                Time:  1 Board
+Plain Round Shield             Engineer 1                Time:  3 Board
+Round Shield                   Engineer 2                Time:  4 Board, Iron Piece
+Heavy Round Shield             Engineer 3                Time:  6 Board, Iron Piece, Iron Piece
+Huscarl's Round Shield         Engineer 3                Time:  7 Board, Iron Piece, Iron Piece, Iron Piece
+Plain Kite Shield              Engineer 1                Time:  3 Board, Board
+Kite Shield                    Engineer 2                Time:  4 Board, Board, Iron Piece
+Heavy Kite Shield              Engineer 3                Time:  6 Board, Board, Iron Piece
+Horseman's Kite Shield         Engineer 2                Time:  4 Board, Iron Piece
+Knightly Kite Shield           Engineer 3                Time:  6 Board, Iron Piece
+Plain Heater Shield            Engineer 2                Time:  4 Board, Board, Iron Piece
+Heater Shield                  Engineer 2                Time:  5 Board, Board, Iron Piece
+Heavy Heater Shield            Engineer 3                Time:  6 Board, Board, Iron Piece
+Horseman's Heater Shield       Engineer 3                Time:  4 Board, Iron Piece
+Knightly Heater Shield         Engineer 3                Time:  5 Board, Iron Piece
+Plain Board Shield             Engineer 1                Time:  5 Board, Board, Board
+Board Shield                   Engineer 2                Time:  7 Board, Board, Board, Iron Piece
+Heavy Board Shield             Engineer 3                Time:  9 Board, Board, Board, Iron Piece
+Plain Cavalry Shield           Engineer 2                Time:  2 Board
+Round Cavalry Shield           Engineer 2                Time:  3 Board, Iron Piece
+Elite Cavalry Shield           Engineer 3                Time:  7 Board, Iron Piece
+Hide Covered Round Shield      Engineer 2                Time:  2 Board, Raw Hide
+Hide Covered Kite Shield       Engineer 2                Time:  3 Board, Board, Raw Hide
+Steel Shield                   Engineer 6                Time: 13 Iron Bar
+Sumpter Horse                  Herding 1                 Time:  2 Board, Wheat Sheaf
+Cart Horse                     Herding 1                 Time:  3 Board, Wheat Sheaf, Wheat Sheaf
+Saddle Horse                   Herding 1                 Time:  5 Saddle, Wheat Sheaf
+Steppe Horse                   Herding 1                 Time:  6 Saddle, Wheat Sheaf
+Desert Horse                   Herding 2                 Time:  7 Saddle, Wheat Sheaf
+Silver Horse                   Herding 2                 Time:  8 Saddle, Wheat Sheaf
+Courser                        Herding 3                 Time: 10 Saddle, Wheat Sheaf
+Hunter                         Herding 2                 Time: 12 Saddle, Wheat Sheaf
+War Horse                      Herding 3                 Time: 15 Saddle, Horse Armor, Wheat Sheaf
+Steppe War Horse               Herding 3                 Time: 15 Saddle, Horse Armor, Wheat Sheaf
+Barded War Horse               Herding 3                 Time: 15 Saddle, Horse Armor, Wheat Sheaf, Wheat Sheaf
+Charger                        Herding 3                 Time: 17 Saddle, Horse Armor, Wheat Sheaf, Wheat Sheaf
+Plated Charger                 Herding 3                 Time: 20 Saddle, Horse Armor, Wheat Sheaf, Wheat Sheaf
+Saddle                         Engineer 2                Time:  4 Leather Roll, Board
+Horse Armor                    Engineer 6                Time: 16 Iron Bar, Iron Bar, Iron Bar, Iron Bar
+Woodcutter's Axe               Engineer 2                Time:  2 Short Iron Bar, Short Wooden Pole
+Small Mining Pick              Engineer 2                Time:  2 Short Iron Bar, Short Wooden Pole
+Mining Pick                    Engineer 3                Time:  5 Iron Bar, Short Wooden Pole
+Repair Hammer                  Engineer 2                Time:  3 Iron Piece, Stick
+Lock Pick                      Engineer 3                Time:  8 Iron Piece
+Bucket                         Engineer 2                Time:  1 Board, Board, Iron Piece
+Fishing Spear                  Engineer 2                Time:  2 Wooden Pole, Short Iron Bar
+Fishing Net                    Engineer 2                Time:  4 Short Wooden Pole, Short Wooden Pole, Linen Thread, Linen Thread
+Sickle                         Engineer 2                Time:  1 Short Iron Bar, Stick
+Scythe                         Engineer 2                Time:  3 Iron Bar, Wooden Pole
+Wheat Sack                     N o n e                   Time:  1 Wheat Sheaf
+Kitchen Knife                  Engineer 2                Time:  1 Iron Piece
+Butchering Cleaver             Engineer 2                Time:  2 Short Iron Bar
+Knife                          Engineer 2                Time:  1 Short Iron Bar
+Butchering Knife               Engineer 3                Time:  2 Short Iron Bar
+Broom                          N o n e                   Time:  1 Short Wooden Pole, Flax Bundle
+Herding Crook                  Engineer 2                Time:  2 Wooden Pole, Iron Piece
+Surgeon's Scalpel              Engineer 4                Time:  8 Iron Piece
+Dagger                         Engineer 3                Time:  3 Short Iron Bar
+Poisoned Dagger                Engineer 4                Time: 20 Dagger, Herb
+Thin Lance                     Engineer 2                Time:  3 Wooden Pole, Iron Piece
+Torch                          Engineer 1                Time:  1 Stick
+Book of Clothing               Engineer 2                Time: 20 Small Linen Cloth, Leather Piece
+Book of Weapons                Engineer 2                Time: 25 Small Linen Cloth, Leather Piece
+Book of Armor                  Engineer 2                Time: 27 Small Linen Cloth, Leather Piece
+Book of Healing                Engineer 2                Time: 10 Small Linen Cloth, Leather Piece
+Book                           Engineer 2                Time:  5 Small Linen Cloth, Leather Piece
+Sacred Book                    Engineer 2                Time: 60 Small Linen Cloth, Leather Piece
+Lyre                           Engineer 2                Time:  7 Board
+Lute                           Engineer 3                Time:  8 Board, Board, Stick
+Warhorn                        Engineer 3                Time:  8 Iron Piece, Leather Piece
+Die                            Engineer 2                Time:  1 Stick
+Club                           Engineer 2                Time:  3 Short Wooden Pole
+Spiked Club                    Engineer 2                Time:  5 Short Wooden Pole
+Old Knife                      Engineer 2                Time:  3 Iron Piece
+Crude Spear                    Engineer 2                Time:  5 Short Wooden Pole
+Blunt Falchion                 Engineer 2                Time:  3 Short Iron Bar
+Chipped Falchion               Engineer 2                Time:  5 Short Iron Bar
+Rusty Sword                    Engineer 2                Time:  3 Short Iron Bar
+Worn Sword                     Engineer 2                Time:  5 Short Iron Bar
+Bent Lance                     Engineer 2                Time:  5 Short Wooden Pole
+Blue Shirt                     Tailoring 1               Time:  2 Linen Cloth
+Green Shirt                    Tailoring 1               Time:  2 Linen Cloth
+Decorated Khergit Vest         Tailoring 2               Time:  3 Linen Cloth
+White Khergit Vest             Tailoring 2               Time:  3 Linen Cloth
+Blue Kaftan                    Tailoring 2               Time:  3 Linen Cloth
+Red Kaftan                     Tailoring 2               Time:  3 Linen Cloth
+Gold Tourney Armor             Tailoring 1               Time:  5 Linen Cloth, Leather Piece
+Ragged Armor                   Engineer 3                Time: 11 Short Iron Bar, Linen Cloth
+Byrnie with Green Tunic        Engineer 3                Time: 11 Short Iron Bar, Linen Cloth
+Byrnie with Blue Tunic         Engineer 3                Time: 11 Short Iron Bar, Linen Cloth
+Studded Coat with Mail         Engineer 3                Time: 11 Short Iron Bar, Leather Roll
+Red Gambeson                   Tailoring 3               Time: 10 Linen Cloth, Leather Piece
+Brown Gambeson                 Tailoring 3               Time: 10 Leather Roll, Small Linen Cloth
+Gambeson                       Tailoring 3               Time: 10 Linen Cloth, Leather Piece
+Padded Leather                 Engineer 2 / Tailoring 3  Time:  8 Leather Roll, Small Linen Cloth
+Padded Leather with Cape       Engineer 2 / Tailoring 3  Time: 10 Leather Roll, Small Linen Cloth, Small Linen Cloth
+Brown Assassin Armor           Engineer 2 / Tailoring 2  Time: 11 Linen Cloth, Linen Cloth
+White Assassin Armor           Engineer 2 / Tailoring 2  Time: 11 Linen Cloth, Linen Cloth
+Green Assassin Armor           Engineer 2 / Tailoring 2  Time: 11 Linen Cloth, Linen Cloth
+Aketon                         Engineer 2 / Tailoring 2  Time: 11 Linen Cloth, Linen Cloth
+Light Mercenary Armor          Engineer 3                Time: 11 Linen Cloth, Short Iron Bar
+Aketon with Kneecops           Engineer 3                Time: 11 Linen Cloth, Short Iron Bar
+Peasant Mail with Cape         Engineer 3                Time: 11 Short Iron Bar, Leather Piece
+Brown Gambeson with Cape       Engineer 2 / Tailoring 2  Time: 11 Leather Roll, Leather Piece
+Black Gambeson with Cape       Engineer 2 / Tailoring 2  Time: 11 Leather Roll, Leather Piece
+Padded Mail with White Shirt   Engineer 3                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Padded Mail with Green Shirt   Engineer 3                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Light Hauberk                  Engineer 4                Time: 11 Short Iron Bar, Linen Cloth
+Green Light Brigandine         Engineer 4                Time: 11 Short Iron Bar, Linen Cloth
+Blue Lamellar Vest             Engineer 4                Time: 11 Short Iron Bar, Linen Cloth
+Red Lamellar Vest with Mail    Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Black Gambeson with Mail       Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Red Gambeson with Mail         Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Brown Light Brigandine with Mail Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Leather Roll
+Light Saracen Armor            Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Light Saracen Infantry Armor   Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Medium Mercenary Armor         Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Rus Lamellar Armor             Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Linen Cloth
+Light Kuyak                    Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Leather Piece
+Saracen Infantry Armor         Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Medium Saracen Armor           Engineer 4                Time: 11 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Heavy Kuyak                    Engineer 5                Time: 12 Short Iron Bar, Short Iron Bar, Leather Roll
+Saracen Lamellar Armor         Engineer 5                Time: 12 Short Iron Bar, Short Iron Bar, Linen Cloth
+Lamellar Armor                 Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Linen Cloth
+Heavy Saracen Armor            Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Linen Cloth
+Heavy Hauberk                  Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Small Linen Cloth
+Rus Scale Armor                Engineer 6                Time: 15 Short Iron Bar, Short Iron Bar, Linen Cloth
+Heavy Hauberk with Plate       Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Linen Cloth
+Green Corrazina                Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Linen Cloth
+Red Corrazina                  Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Linen Cloth
+Saracen Guard Armor            Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Linen Cloth
+Blue Brigandine with Plate     Engineer 6                Time: 17 Iron Bar, Iron Bar, Linen Cloth
+Red Brigandine with Plate      Engineer 6                Time: 17 Iron Bar, Iron Bar, Linen Cloth
+Elite Lamellar Armor           Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Ghulam Lamellar Armor          Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Heavy Mercenary Armor          Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Red Brigandine with Plate and Mail Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Black Brigandine with Plate and Mail Engineer 6                Time: 17 Iron Bar, Iron Bar, Leather Piece, Linen Cloth
+Sultan Armor                   Engineer 7                Time: 20 Iron Bar, Iron Bar, Linen Cloth
+Blue Churburg                  Engineer 7                Time: 20 Short Iron Bar, Short Iron Bar, Linen Cloth
+Decorated Red Churburg         Engineer 7                Time: 22 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Decorated Grey Churburg        Engineer 7                Time: 22 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Milanese Plate                 Engineer 7                Time: 23 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Gothic Plate                   Engineer 7                Time: 23 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Royal Plate                    Engineer 7                Time: 23 Long Iron Bar, Long Iron Bar, Leather Piece, Linen Cloth
+Leather Gauntlets              Engineer 4 / Tailoring 2  Time:  2 Leather Piece
+Mail Gauntlets                 Engineer 3                Time:  4 Iron Piece
+Demi Gauntlets                 Engineer 4                Time:  5 Leather Piece, Iron Piece
+Saracen Gauntlets              Engineer 5                Time:  5 Leather Piece, Iron Piece
+Finger Gauntlets               Engineer 5                Time:  5 Leather Piece, Iron Piece
+Decorated Saracen Gauntlets    Engineer 5                Time:  5 Leather Piece, Iron Piece, Iron Piece
+Hourglass Gauntlets            Engineer 6                Time:  6 Leather Piece, Short Iron Bar, Short Iron Bar
+Decorated Hourglass Gauntlets  Engineer 6                Time:  6 Leather Piece, Short Iron Bar, Short Iron Bar
+Black Rich Boots               Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Red Rich Boots                 Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Rus Cavalry Boots              Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Saracen Leather Boots          Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Noble Leather Boots            Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Red Saracen Leather Boots      Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Saracen Elite Boots            Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Saracen Royal Boots            Engineer 3 / Tailoring 2  Time:  4 Leather Piece, Leather Piece
+Rus Splinted Greaves           Engineer 3 / Tailoring 3  Time:  5 Leather Piece, Leather Piece, Iron Piece
+Splinted Greaves               Engineer 3 / Tailoring 3  Time:  5 Leather Piece, Leather Piece, Iron Piece
+Steel Greaves                  Engineer 5                Time:  7 Leather Piece, Short Iron Bar, Short Iron Bar
+Shynbaulds                     Engineer 6                Time:  8 Leather Piece, Short Iron Bar, Short Iron Bar, Short Iron Bar
+Polished Steel Boots           Engineer 6                Time: 10 Leather Piece, Leather Piece, Iron Bar, Iron Bar
+Steel Boots                    Engineer 6                Time: 10 Leather Piece, Leather Piece, Iron Bar, Iron Bar
+Crown                          Engineer 6                Time: 12 Gold Nugget
+Bejeweled Crown                Engineer 6                Time: 12 Gold Nugget
+Brown Assassin Cape            Tailoring 1               Time:  1 Small Linen Cloth, Small Linen Cloth
+Green Assassin Cape            Tailoring 1               Time:  1 Small Linen Cloth, Small Linen Cloth
+White Assassin Cape            Tailoring 1               Time:  1 Small Linen Cloth, Small Linen Cloth
+Tourney Helm Yellow            Engineer 2                Time:  5 Leather Piece, Iron Piece
+Saracen Helmet with Leather    Engineer 2                Time:  5 Leather Piece, Iron Piece
+Saracen Helmet with Mail       Engineer 2                Time:  6 Short Iron Bar, Leather Piece
+Chapel De Fer with Cloth       Engineer 2                Time:  7 Short Iron Bar, Small Linen Cloth
+Gnezdovo Helmet                Engineer 2                Time:  7 Short Iron Bar, Leather Piece
+Bascinet                       Engineer 4                Time:  8 Short Iron Bar, Iron Piece
+Sallet                         Engineer 4                Time:  8 Short Iron Bar, Iron Piece
+Barbuta                        Engineer 4                Time:  9 Short Iron Bar, Iron Piece
+Rus Helmet                     Engineer 4                Time: 10 Short Iron Bar, Iron Piece
+Decorated Saracen Helmet with Mail Engineer 4                Time: 10 Short Iron Bar, Small Linen Cloth
+Reinforced Kattlehat           Engineer 4                Time: 10 Short Iron Bar, Iron Piece
+Chapel De Fer with Mail        Engineer 4                Time: 11 Short Iron Bar, Iron Piece
+Chapel De Fer with Mail        Engineer 4                Time: 11 Short Iron Bar, Iron Piece
+Open Sallet with Coif          Engineer 4                Time: 11 Short Iron Bar, Iron Piece
+Zitta Bascinet without Visor   Engineer 4                Time: 11 Short Iron Bar, Iron Piece
+Prato Chapel De Fer            Engineer 4                Time: 11 Short Iron Bar, Iron Piece, Leather Piece
+Gulam Helmet with Blue Cloth   Engineer 4                Time: 12 Short Iron Bar, Small Linen Cloth
+Gulam Helmet with Red Cloth    Engineer 4                Time: 12 Short Iron Bar, Small Linen Cloth
+Gulam Helmet                   Engineer 4                Time: 13 Short Iron Bar, Iron Piece
+Open Tagancha                  Engineer 5                Time: 13 Short Iron Bar, Short Iron Bar
+Tagancha                       Engineer 5                Time: 13 Short Iron Bar, Short Iron Bar
+Nikolskoe Helmet               Engineer 5                Time: 13 Short Iron Bar, Short Iron Bar
+Novogrod Helmet                Engineer 5                Time: 14 Short Iron Bar, Short Iron Bar
+Visored Sallet                 Engineer 5                Time: 14 Short Iron Bar, Iron Piece
+Visored Sallet with Coif       Engineer 5                Time: 14 Short Iron Bar, Iron Piece
+Open Sallet                    Engineer 5                Time: 14 Short Iron Bar, Iron Piece
+Closed Sallet                  Engineer 5                Time: 14 Short Iron Bar, Iron Piece
+Open Sallet with Neckguard     Engineer 5                Time: 15 Short Iron Bar, Short Iron Bar
+Sallet with Neckguard          Engineer 5                Time: 15 Short Iron Bar, Short Iron Bar
+Litchina Helmet                Engineer 5                Time: 15 Short Iron Bar, Short Iron Bar
+Decorated Gulam Helm           Engineer 5                Time: 16 Short Iron Bar, Short Iron Bar
+Hounskull Helmet               Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Leather Piece
+Open Zitta Bascinet            Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Leather Piece
+Zitta Bascinet                 Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Leather Piece
+Open Pigface Helmet            Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Iron Piece
+Pigface Helmet                 Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Iron Piece
+Open Klappvisier               Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Iron Piece
+Klappvisier                    Engineer 6                Time: 17 Short Iron Bar, Short Iron Bar, Iron Piece
+Milanese Helmet                Engineer 6                Time: 18 Short Iron Bar, Short Iron Bar, Iron Piece
+Sugarloaf                      Engineer 6                Time: 20 Iron Bar, Small Linen Cloth
+Sultan Helmet                  Engineer 6                Time: 20 Iron Bar, Small Linen Cloth
+Flemish Armet                  Engineer 6                Time: 21 Iron Bar, Short Iron Bar, Small Linen Cloth
+Great Bascinet                 Engineer 6                Time: 21 Iron Bar, Short Iron Bar, Small Linen Cloth
+Greathelm with Bascinet        Engineer 6                Time: 21 Iron Bar, Short Iron Bar, Small Linen Cloth
+Weimar Helmet                  Engineer 6                Time: 21 Iron Bar, Short Iron Bar, Small Linen Cloth
+Early Transitional Armor       Engineer 6                Time: 16 Short Iron Bar, Short Iron Bar, Linen Cloth
+Practice Dagger                Engineer 2                Time:  1 Short Wooden Pole
+Iberian Mace                   Engineer 2                Time:  4 Short Iron Bar, Short Iron Bar
+Warhammer                      Engineer 3                Time:  4 Short Iron Bar, Stick
+Grosse Messer                  Engineer 2                Time:  4 Iron Bar
+Milanese Sword                 Engineer 4                Time:  8 Iron Bar
+Scottish Sword                 Engineer 4                Time:  9 Iron Bar
+Italian Sword                  Engineer 4                Time: 10 Iron Bar
+Crusader Sword                 Engineer 4                Time: 10 Iron Bar
+Langes Messer                  Engineer 5                Time: 11 Long Iron Bar
+Longsword                      Engineer 5                Time: 12 Long Iron Bar
+German Longsword               Engineer 5                Time: 12 Long Iron Bar
+English Longsword              Engineer 5                Time: 12 Long Iron Bar
+German Greatsword              Engineer 6                Time: 15 Long Iron Bar
+Danish Greatsword              Engineer 7                Time: 15 Long Iron Bar
+Claymore                       Engineer 7                Time: 15 Long Iron Bar
+Battle Fork                    Engineer 1                Time:  2 Wooden Pole, Iron Piece
+Short Poleaxe                  Engineer 2                Time:  4 Wooden Pole, Short Iron Bar
+German Poleaxe                 Engineer 2                Time:  5 Wooden Pole, Short Iron Bar
+Poleaxe                        Engineer 3                Time:  5 Wooden Pole, Iron Piece
+Elegant Poleaxe                Engineer 3                Time:  5 Wooden Pole, Iron Piece
+English Bill                   Engineer 3                Time:  5 Wooden Pole, Iron Piece
+Swiss Halberd                  Engineer 3                Time:  5 Wooden Pole, Iron Piece
+Decorated Longbow              Engineer 5                Time:  9 Wooden Pole
+Barded Horse                   Herding 3                 Time: 13 Saddle, Horse Armor, Wheat Sheaf
+Barded Horse with Mask         Herding 3                 Time: 17 Saddle, Horse Armor, Wheat Sheaf, Wheat Sheaf
+Saracen Sultan Horse           Herding 3                 Time: 17 Saddle, Horse Armor, Wheat Sheaf, Wheat Sheaf
+Saracen War Horse              Herding 3                 Time: 17 Saddle, Horse Armor, Wheat Sheaf, Wheat Sheaf
+Dragon's Tongue                Engineer 3                Time:  4 Short Iron Bar, Stick
+Royal Dagger                   Engineer 3                Time:  3 Short Iron Bar
+Noyan Dagger                   Engineer 3                Time:  3 Short Iron Bar
+Royal Sword                    Engineer 4                Time: 10 Iron Bar
+Battle Sceptre                 Engineer 3                Time:  7 Short Wooden Pole, Iron Bar
+Royal Bastard Sword            Engineer 5                Time: 12 Long Iron Bar
+Royal Great Sword              Engineer 7                Time: 15 Long Iron Bar
+Katana                         Engineer 7                Time: 15 Long Iron Bar
+Wakizashi                      Engineer 4                Time:  8 Iron Bar
+Flute                          Engineer 2                Time:  7 Board
+Vielle                         Engineer 2                Time:  7 Board
+Vielle Bow                     Engineer 2                Time:  7 Stick
+Silver Ring with Sapphire      Engineer 6                Time: 10 Silver Nugget
+Silver Ring with Ruby          Engineer 6                Time: 12 Silver Nugget
+Gold Ring with Sapphire        Engineer 6                Time: 15 Gold Nugget
+Gold Ring with Ruby            Engineer 6                Time: 18 Gold Nugget
+Golden Earrings                Engineer 6                Time: 10 Gold Nugget
+Opal Earrings                  Engineer 6                Time: 11 Gold Nugget
+Agate Earrings                 Engineer 6                Time: 12 Gold Nugget
+Earrings with Yellow Jade      Engineer 6                Time: 13 Gold Nugget
+Amethyst Earrings              Engineer 6                Time: 14 Gold Nugget
+Golden Earrings                Engineer 6                Time: 15 Gold Nugget
+Sapphire Earrings              Engineer 6                Time: 16 Gold Nugget
+Nephrite Earrings              Engineer 6                Time: 17 Gold Nugget
+Black Pearl Earrings           Engineer 6                Time: 18 Gold Nugget
+Ruby Earrings                  Engineer 6                Time: 18 Gold Nugget
+Red Robe with Cape             Tailoring 1               Time:  2 Linen Cloth
+Green Robe with Cape           Tailoring 1               Time:  2 Linen Cloth
+Rich Tunic                     Tailoring 1               Time:  2 Linen Cloth
+Sarranid Shirt                 Tailoring 1               Time:  2 Linen Cloth
+Shirt                          Tailoring 1               Time:  2 Linen Cloth
+Maroon Dress                   Tailoring 1               Time:  2 Linen Cloth
+Tavernkeep Shirt               Tailoring 1               Time:  2 Linen Cloth
+Red Courtly Dress              Tailoring 1               Time:  2 Linen Cloth
+Blue Courtly Dress             Tailoring 1               Time:  2 Linen Cloth
+Blue Ornate Courtly Outfit     Tailoring 1               Time:  2 Linen Cloth
+Red Ornate Courtly Outfit      Tailoring 1               Time:  2 Linen Cloth
+Rich Noble Tunic               Tailoring 1               Time:  2 Linen Cloth
+Rich Noble Tunic               Tailoring 1               Time:  2 Linen Cloth
+Brown Maid Dress               Tailoring 1               Time:  2 Linen Cloth
+Peasant Dress                  Tailoring 1               Time:  2 Linen Cloth
+Executioner's Axe              Engineer 5                Time: 11 Short Wooden Pole, Iron Bar
+Practice Arrows                Engineer 1                Time:  2 Stick
+Practice Bolts                 Engineer 1                Time:  2 Stick
+Letter                         Engineer 3                Time:  6 Leather Roll
