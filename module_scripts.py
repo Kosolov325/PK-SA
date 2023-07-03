@@ -5686,23 +5686,25 @@ scripts.extend([
     ]),
 
   ("calculate_faction_stock_from_rent",
-   [(store_script_param, ":stock_count", 1),
-    (store_script_param, ":player_id", 2),
-    (store_script_param, ":instance_id", 3),
-     
-    (assign, ":rent_amount", 0),
+   [(store_script_param, ":player_id", 1),
+    (store_script_param, ":instance_id", 2),
+
     (try_begin),
       (player_get_slot, ":faction_id", ":player_id", slot_player_faction_id),
       (call_script, "script_scene_prop_get_owning_faction", ":instance_id"),
       (eq, ":faction_id", reg0),
+
       (faction_get_slot, ":rent_percentage", ":faction_id", slot_faction_rent),
-      (neq, ":rent_percentage", 0),
-      (val_div, ":rent_percentage", 10),
-      (assign, reg1, ":rent_amount"),
-      (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@You crafted {reg1} additional stock counts from your faction rent level."),
+
+      (try_begin),
+        (gt, ":rent_percentage", 0),
+        (val_div, ":rent_percentage", 10),
+        (assign, reg1, ":rent_percentage"),
+        (multiplayer_send_string_to_player, ":player_id", server_event_script_message, "@You crafted {reg1} additional stock counts from your faction rent level."),
+      (try_end),
     (try_end),
-    (val_add, ":stock_count", ":rent_amount"),
-    (assign, reg0, ":stock_count"),
+
+    (assign, reg0, ":rent_percentage"),
    ]),
 
   ("calculate_faction_rent_price",
@@ -5750,10 +5752,7 @@ scripts.extend([
       (try_begin),
         (eq, ":faction_id", ":winner_faction_id"), 
         (assign, reg2, ":winner_rent_value"),
-        (try_begin),
-          (neq, reg2, 0),
-          (val_div, reg2, 10),
-        (try_end),
+        (val_div, reg2, 10),
         (multiplayer_send_string_to_player, ":player_id", server_event_script_message_announce, "@Your faction rent level has increased. Level: {reg2}"),
         (multiplayer_send_int_to_player, ":player_id", server_event_play_sound, "snd_money_received"),
       (else_try),
@@ -5901,7 +5900,7 @@ scripts.extend([
         (call_script, "script_cf_agent_consume_item", ":agent_id", ":banner_item_id", 1),
         (scene_prop_set_slot, ":instance_id", slot_scene_prop_capture_faction_id, ":player_faction_id"),
         (call_script, "script_redraw_castle_banners", redraw_single_capture_point_banner, ":instance_id"),
-        (call_script, "script_decrease_and_increase_faction_rent", reg0, ":player_faction_id"),
+        (call_script, "script_decrease_and_increase_faction_rent", ":faction_id", ":player_faction_id"),
 
 		#Log the capture /Phoenix
 		(str_store_player_username, s10, ":player_id"),
@@ -9425,7 +9424,7 @@ scripts.extend([
       (call_script, "script_player_adjust_gold", ":player_id", reg0, 1),
       (val_add, ":stock_count", 1),
       (call_script, "script_calculate_faction_stock_from_rent", ":stock_count", ":player_id", ":instance_id"),
-      (assign, ":stock_count", reg0),
+      (val_add, ":stock_count", reg0),
       (scene_prop_set_slot, ":instance_id", slot_scene_prop_stock_count, ":stock_count"),
       (multiplayer_send_3_int_to_player, ":player_id", server_event_scene_prop_set_slot, ":instance_id", slot_scene_prop_stock_count, ":stock_count"),
     (else_try),
