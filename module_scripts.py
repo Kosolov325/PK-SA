@@ -9423,7 +9423,7 @@ scripts.extend([
       (call_script, "script_calculate_faction_rent_price", ":player_id", ":instance_id", reg0),
       (call_script, "script_player_adjust_gold", ":player_id", reg0, 1),
       (val_add, ":stock_count", 1),
-      (call_script, "script_calculate_faction_stock_from_rent", ":stock_count", ":player_id", ":instance_id"),
+      (call_script, "script_calculate_faction_stock_from_rent", ":player_id", ":instance_id"),
       (val_add, ":stock_count", reg0),
       (scene_prop_set_slot, ":instance_id", slot_scene_prop_stock_count, ":stock_count"),
       (multiplayer_send_3_int_to_player, ":player_id", server_event_scene_prop_set_slot, ":instance_id", slot_scene_prop_stock_count, ":stock_count"),
