@@ -3560,7 +3560,7 @@ scripts.extend([
     (try_for_range, ":faction_id", factions_begin, factions_end),
       (faction_set_slot, ":faction_id", slot_faction_is_active, 0),
       (faction_set_slot, ":faction_id", slot_faction_is_locked, 0),
-      (faction_set_slot, ":faction_id", slot_faction_rent, 0),
+      (faction_set_slot, ":faction_id", slot_faction_rent, 10),
       (faction_set_slot, ":faction_id", slot_faction_name_is_custom, 0),
       (faction_set_slot, ":faction_id", slot_faction_lord_player_uid, 0),
       (faction_set_slot, ":faction_id", slot_faction_lord_last_seen_time, 0),
