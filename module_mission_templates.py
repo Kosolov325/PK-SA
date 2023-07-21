@@ -1109,6 +1109,19 @@ skybox_update_interval = (5, 0, 0, [], [
   (call_script, "script_skybox_send_info_to_players"),
 ])
 
+castle_passive_rent = (1800, 0, 0, [], [
+	(multiplayer_is_server),
+	(try_for_prop_instances, ":instance_id", "spr_pw_castle_money_chest"),
+	  (scene_prop_get_slot, ":chest_gold", ":instance_id", slot_scene_prop_stock_count),
+	  (gt, ":chest_gold", 0),
+	  (call_script, "script_scene_prop_get_owning_faction", ":instance_id"),
+	  (faction_get_slot, ":rent_percentage",reg0, slot_faction_rent),
+	  (gt, ":rent_percentage", 0),
+    (call_script, "script_castle_receive_gold", reg1, ":chest_gold", ":rent_percentage"),
+  (try_end),
+  (server_add_message_to_log, "@Faction passive rent has been deposited."),
+])
+
 def common_triggers(self):
 	return [(ti_before_mission_start, 0, 0, [(assign, "$g_game_type", "mt_" + self)], []),
     before_mission_start_setup,
@@ -1178,6 +1191,7 @@ def common_triggers(self):
     render_weather_effects,
     
     skybox_update_interval,
+    castle_passive_rent,
     ]
 
 mission_templates = [
